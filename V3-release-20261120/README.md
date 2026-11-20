@@ -6,6 +6,7 @@
 > 决策层：`v3ai`（LLM + 工具 + 审查 + 执行；见 [v3ai/README.md](v3ai/README.md)）
 > 决策计算层：`v3calc.advisor`（价格反馈 / 候选包 / 简报 / 台账；见 [v3calc/ADVISOR.md](v3calc/ADVISOR.md)）
 > **给中心决策层的交接文档：[HANDOFF.md](HANDOFF.md)**（自包含，可直接转发）
+> **项目总览：[项目总览.md](项目总览.md)**（整体架构 / 五大模块详解 / 命令速查 / 版本适配状态）
 > 版本：2026-11-18　|　测试：`python -m unittest discover -s tests -v` → **52/52 通过**；
 > `python -m v3calc selftest` → **34/34 通过**（决策计算层）
 
