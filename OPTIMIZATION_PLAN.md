@@ -1,5 +1,7 @@
 # V3 项目优化计划 (2026-11-21)
 
+> 项目：**枢密院（Privy Council）**
+
 目标：在不破坏 52 项离线回归测试 + 34 项 v3calc selftest 的前提下，提升计算层（v3calc）决策模拟吞吐与 Mod（v3panel）稳定性。
 
 工作区根：D:\Game\ai\V3

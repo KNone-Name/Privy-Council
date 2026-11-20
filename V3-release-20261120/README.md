@@ -1,5 +1,6 @@
 # v3calc — Victoria 3 实时数据总程序 + 计算层
 
+> 项目名：**枢密院（Privy Council）** —— 整套系统（读取 / 计算 / 决策 / 执行 / 面板）的正式名称
 > 工作目录：`D:\Game\ai\V3`
 > 读取层：`v3live`（从 `Victoria3-RE\tools\v3live` 原样引入，逆向层已验证）
 > 计算层：`v3calc`（本目录新增）
