@@ -38,14 +38,33 @@ SYSTEM_PROMPT = (
 )
 
 
+_log_fh = None
+
+
+def _log_file() -> object:
+    """懒打开并复用的日志文件句柄（避免每行 open/close）。"""
+    global _log_fh
+    if _log_fh is None:
+        try:
+            _log_fh = open(os.path.join(HERE, "panel_server.log"), "a",
+                           encoding="utf-8")
+        except OSError:
+            _log_fh = None
+    return _log_fh
+
+
 def log(msg: str) -> None:
     line = time.strftime("[%H:%M:%S] ") + msg
     print(line, flush=True)
+    fh = _log_file()
+    if fh is None:
+        return
     try:
-        with open(os.path.join(HERE, "panel_server.log"), "a", encoding="utf-8") as fh:
-            fh.write(line + "\n")
+        fh.write(line + "\n")
+        fh.flush()
     except OSError:
-        pass
+        global _log_fh
+        _log_fh = None
 
 
 def load_config() -> dict:
@@ -65,14 +84,39 @@ def load_config() -> dict:
     return cfg
 
 
-def load_ctx() -> dict:
-    """读取同目录 snap.json（可选），压缩成给 LLM 的局势上下文。"""
+_SNAP_CACHE: dict = {"mtime": None, "snap": None}
+
+
+def _load_snap() -> tuple[float, dict] | None:
+    """按 mtime 缓存 snap.json 的解析结果；文件变了才重新读。"""
     try:
         mtime = os.path.getmtime(SNAP_PATH)
+    except OSError:
+        return None
+    if _SNAP_CACHE["mtime"] == mtime and _SNAP_CACHE["snap"] is not None:
+        return mtime, _SNAP_CACHE["snap"]
+    try:
         with open(SNAP_PATH, "r", encoding="utf-8") as fh:
             snap = json.load(fh)
-    except Exception:
+    except (OSError, ValueError):
+        return None
+    if not isinstance(snap, dict):
+        return None
+    _SNAP_CACHE["mtime"] = mtime
+    _SNAP_CACHE["snap"] = snap
+    return mtime, snap
+
+
+def load_ctx() -> dict:
+    """读取同目录 snap.json（可选），压缩成给 LLM 的局势上下文。
+
+    解析结果按文件 mtime 缓存：游戏侧写快照（通常每秒/每几秒）只触发一次
+    重新解析，重复提交时直接复用。
+    """
+    got = _load_snap()
+    if got is None:
         return {}
+    mtime, snap = got
     age = max(0, int(time.time() - mtime))
     game = snap.get("game") or {}
     country = snap.get("country") or {}

@@ -1,0 +1,15 @@
+# runtime / generated
+__pycache__/
+*.pyc
+*.pyo
+*.log
+state/
+_cache/
+snap.json
+snap_live.json
+*.tmp
+
+# local runtime outputs
+v3ai/state/
+v3calc/state/
+v3live/_cache/
