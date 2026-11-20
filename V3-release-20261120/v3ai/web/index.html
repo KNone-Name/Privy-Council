@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>御前会议</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="vignette"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="seal" id="brand-seal">国</div>
+      <div class="brand-text">
+        <div class="kicker" id="brand-kicker">当前国家</div>
+        <h1 id="brand-name">当前国家</h1>
+        <div class="brand-sub">维多利亚 3 · <span id="game-version">1.15.1</span></div>
+      </div>
+    </div>
+
+    <div class="top-stats" id="top-stats">
+      <div class="top-stat"><span class="ts-icon">£</span><span class="ts-label">年产值</span><b id="stat-gdp">—</b></div>
+      <div class="top-stat"><span class="ts-icon">◉</span><span class="ts-label">人口</span><b id="stat-pop">—</b></div>
+      <div class="top-stat"><span class="ts-icon">◈</span><span class="ts-label">国库</span><b id="stat-treasury">—</b></div>
+      <div class="top-stat"><span class="ts-icon">↕</span><span class="ts-label">周结余</span><b id="stat-balance">—</b></div>
+      <div class="top-stat"><span class="ts-icon">⚒</span><span class="ts-label">建造力</span><b id="stat-construction">—</b></div>
+      <div class="top-stat"><span class="ts-icon">▤</span><span class="ts-label">队列</span><b id="stat-queue">—</b></div>
+    </div>
+
+    <div class="livebox">
+      <div class="live-row"><span class="live-dot" id="live-dot"></span><span id="live-label">实时</span></div>
+      <div class="live-time" id="live-time">等待快照…</div>
+      <div class="live-date" id="live-date">—</div>
+    </div>
+    <div class="service-box" id="service-box">
+      <span class="service-dot" id="service-dot"></span>
+      <div class="service-text">
+        <div class="service-label" id="service-label">服务未知</div>
+        <div class="service-detail" id="service-detail">DLL · watch · 连续</div>
+        <div class="service-scan" id="service-scan">扫描 —</div>
+        <div class="service-progress"><i id="service-progress-fill"></i></div>
+      </div>
+      <button class="gold-btn service-btn" id="service-toggle">启动服务</button>
+    </div>
+    <button class="settings-btn" id="settings-open" title="设置">⚙</button>
+  </header>
+
+  <main class="layout">
+    <!-- 左：国库 / 营造 / 市场 -->
+    <section class="col col-left">
+      <section class="panel empire-economy">
+        <header class="panel-head">
+          <div><span class="panel-kicker">国库与产出</span><h2>国 库 与 产 出</h2></div>
+          <span class="panel-mark">§</span>
+        </header>
+        <div class="gdp-line">
+          <div class="gdp-value" id="gdp-value">—</div>
+          <div class="gdp-unit">年化产值</div>
+        </div>
+        <div class="gdp-sub" id="gdp-sub">人均 — · 本周产出 —</div>
+
+        <div class="budget-block">
+          <div class="budget-row"><span>周收入</span><b class="pos" id="income-total">—</b></div>
+          <div class="budget-row"><span>周支出</span><b class="neg" id="expense-total">—</b></div>
+          <div class="budget-row emphasis"><span>周结余</span><b id="balance-total">—</b></div>
+          <div class="balance-bar"><div class="balance-fill" id="balance-fill"></div></div>
+        </div>
+
+        <div class="kv-grid">
+          <div class="kv"><span>国库</span><b id="treasury">—</b></div>
+          <div class="kv"><span>信贷额度</span><b id="credit">—</b></div>
+          <div class="kv"><span>投资池变化</span><b id="investment-pool">—</b></div>
+          <div class="kv"><span>税级</span><b id="tax-level">—</b></div>
+        </div>
+
+        <div class="top-expenses">
+          <div class="mini-head">主要支出</div>
+          <div id="expense-list" class="mini-list"></div>
+        </div>
+      </section>
+
+      <section class="panel construction-panel">
+        <header class="panel-head">
+          <div><span class="panel-kicker">营造</span><h2>营 造</h2></div>
+          <span class="panel-mark">⚒</span>
+        </header>
+        <div class="construction-head">
+          <div class="cap-ring" id="cap-ring"><span id="cap-value">—</span></div>
+          <div class="construction-meta">
+            <div><span>建造力</span><b id="construction-cap">—</b><small>/ 周</small></div>
+            <div><span>政府队列</span><b id="queue-count">—</b><small>项</small></div>
+            <div><span>私人队列</span><b id="private-queue-count">—</b><small>项</small></div>
+          </div>
+        </div>
+        <div class="cap-breakdown" id="cap-breakdown"></div>
+        <div class="cap-breakdown" id="queue-eta"></div>
+        <div class="queue-list" id="queue-list">
+          <div class="empty">暂无政府建造队列</div>
+        </div>
+        <div class="mini-head queue-private-head">私人建造</div>
+        <div class="queue-list private" id="private-queue-list">
+          <div class="empty">暂无私人建造</div>
+        </div>
+      </section>
+
+      <section class="panel market-panel">
+        <header class="panel-head">
+          <div><span class="panel-kicker">市场</span><h2>市 场</h2></div>
+          <span class="panel-mark">◈</span>
+        </header>
+        <div class="market-cols">
+          <div>
+            <div class="mini-head">价格高企</div>
+            <div id="market-expensive" class="market-list"></div>
+          </div>
+          <div>
+            <div class="mini-head">价格低迷</div>
+            <div id="market-cheap" class="market-list"></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- 中：御前对话 -->
+    <aside class="chat-panel">
+      <header class="chat-head">
+        <div class="chat-seal">御</div>
+        <div class="chat-title">
+          <div class="panel-kicker">御前会议</div>
+          <h2>御 前 会 议</h2>
+          <div class="chat-sub"><span class="status-dot" id="model-dot"></span><span id="model-name">本地模型</span><span class="chat-sep">·</span><span id="agent-mode">决策</span></div>
+        </div>
+        <div class="chat-head-actions">
+          <button class="icon-btn" id="clear-chat" title="清空对话">⌫</button>
+        </div>
+      </header>
+
+      <div class="chat-toolbar">
+        <span class="toolbar-label">御前议事 · 中间决策台</span>
+        <span class="loop-state" id="loop-state">连续：开 · 下一轮 —</span>
+        <div class="decision-buttons">
+          <button class="ghost-btn" id="loop-toggle" title="开关连续模式">连续：开</button>
+          <button class="ghost-btn" id="decide-plan" title="只生成建议，不写游戏">仅建议</button>
+          <button class="gold-btn" id="decide-exec" title="生成建议并执行 1 条">执行一轮</button>
+        </div>
+      </div>
+
+      <div class="messages" id="messages">
+        <div class="msg assistant welcome" data-welcome="1">
+          <div class="avatar">御</div>
+          <div class="msg-body">
+            <div class="msg-meta"><span>御前顾问</span><time>此刻</time></div>
+            <div class="bubble">
+              <p>阁下。臣已阅国库、市场与营建诸事。左右两侧为当前国势，中间可问国是，亦可命臣议一轮建造。</p>
+              <p class="muted">数据来自当前快照；州级明细不在御览范围。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quick-chips" id="quick-chips">
+        <button data-prompt="简要评估当前国力与风险。">评估国力</button>
+        <button data-prompt="根据当前预算、建造力和市场，下一步优先建什么？">下一步建造</button>
+        <button data-prompt="为什么国库和周结余是这个水平？主要收支项是什么？">解释财政</button>
+        <button data-prompt="当前最值得关注的商品短缺或价格异常是什么？">市场异动</button>
+      </div>
+
+      <div class="composer">
+        <textarea id="chat-input" rows="2" placeholder="向御前顾问问话…（Enter 发送，Shift+Enter 换行）"></textarea>
+        <div class="composer-row">
+          <span class="composer-hint" id="composer-hint">模型只读取当前国家概况</span>
+          <button class="send-btn" id="send-btn" title="发送">
+            <span>呈奏</span><span class="send-arrow">↗</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 右：国势 / 朝局 / 典章 -->
+    <section class="col col-right">
+      <section class="panel empire-hero">
+        <div class="hero-map" aria-hidden="true">
+          <svg viewBox="0 0 900 480" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="mapg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#506b45" stop-opacity=".55"/>
+                <stop offset=".55" stop-color="#6d7b4a" stop-opacity=".35"/>
+                <stop offset="1" stop-color="#2d3a2b" stop-opacity=".65"/>
+              </linearGradient>
+              <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+            </defs>
+            <rect width="900" height="480" fill="url(#mapg)"/>
+            <g fill="none" stroke="#d9c89d" stroke-opacity=".12" stroke-width="1">
+              <path d="M-40 90 C 120 60, 220 130, 360 100 S 650 40, 960 90"/>
+              <path d="M-40 160 C 120 130, 250 200, 420 170 S 700 110, 960 170"/>
+              <path d="M-40 240 C 130 210, 260 280, 430 245 S 720 190, 960 250"/>
+              <path d="M-40 320 C 140 290, 280 360, 450 320 S 730 270, 960 330"/>
+              <path d="M-40 400 C 150 370, 300 440, 470 400 S 740 350, 960 410"/>
+            </g>
+            <g fill="#2f3d2c" fill-opacity=".55" filter="url(#soft)">
+              <path d="M120 250 C 160 190, 230 160, 300 175 C 350 185, 360 220, 410 230
+                       C 460 240, 470 280, 520 290 C 560 298, 570 330, 620 335
+                       C 610 380, 540 400, 470 385 C 410 373, 380 400, 330 390
+                       C 270 378, 240 340, 190 330 C 150 322, 120 290, 120 250 Z"/>
+              <path d="M620 180 C 660 160, 700 170, 720 200 C 735 225, 720 250, 690 255
+                       C 660 260, 640 240, 630 215 C 624 200, 620 190, 620 180 Z"/>
+            </g>
+            <g fill="#e3d2a5" fill-opacity=".2">
+              <circle cx="380" cy="255" r="3"/><circle cx="430" cy="300" r="2"/>
+              <circle cx="520" cy="225" r="2"/><circle cx="610" cy="300" r="3"/>
+              <circle cx="300" cy="320" r="2"/><circle cx="480" cy="350" r="2"/>
+            </g>
+          </svg>
+          <div class="hero-seal" id="hero-seal">国</div>
+          <div class="hero-compass">北</div>
+        </div>
+        <div class="hero-overlay">
+          <span class="panel-kicker">帝国总览</span>
+          <h2 id="country-name">当前国家</h2>
+          <p class="hero-quote">观国势、度财用、营产业。</p>
+          <div class="hero-stats">
+            <div><b id="hero-pop">—</b><span>人口</span></div>
+            <div><b id="hero-gdp">—</b><span>年产值</span></div>
+            <div><b id="hero-techs">—</b><span>科技</span></div>
+            <div><b id="hero-laws">—</b><span>法律</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel region-panel">
+        <header class="panel-head">
+          <div><span class="panel-kicker">区域方略</span><h2>区 域</h2></div>
+          <button class="ghost-btn" id="strategy-edit-region">编辑</button>
+        </header>
+        <div class="strategy-name" id="region-mode">全国共同发展</div>
+        <div class="strategy-meta" id="region-count">当前 43 个州</div>
+        <div class="region-list" id="region-list"></div>
+        <div class="strategy-notes" id="region-notes"></div>
+      </section>
+
+      <section class="panel build-panel">
+        <header class="panel-head">
+          <div><span class="panel-kicker">建造方略</span><h2>建 造</h2></div>
+          <button class="ghost-btn" id="strategy-edit">编辑</button>
+        </header>
+        <div class="strategy-name" id="strategy-name">均衡发展</div>
+        <div class="strategy-meta" id="strategy-meta">来源：默认 · 版本 1</div>
+        <div class="strategy-switch-row">
+          <select id="strategy-select" title="切换到已有方略"></select>
+          <button class="ghost-btn" id="strategy-activate">切换</button>
+        </div>
+        <div class="strategy-objs" id="strategy-objs"></div>
+        <div class="strategy-notes" id="strategy-notes"></div>
+      </section>
+
+      <section class="panel politics-panel">
+        <header class="panel-head">
+          <div><span class="panel-kicker">朝野与社会</span><h2>朝 局</h2></div>
+          <span class="panel-mark">⚖</span>
+        </header>
+        <div class="politics-grid">
+          <div>
+            <div class="mini-head">利益集团</div>
+            <div id="ig-list" class="ig-list"></div>
+          </div>
+          <div>
+            <div class="mini-head">政治运动</div>
+            <div id="movement-list" class="movement-list"></div>
+          </div>
+        </div>
+        <div class="laws-block">
+          <div class="mini-head">现行法律</div>
+          <div id="law-chips" class="chips"></div>
+        </div>
+      </section>
+
+      <section class="panel tech-panel">
+        <header class="panel-head">
+          <div><span class="panel-kicker">典章档案</span><h2>典 章</h2></div>
+          <span class="panel-mark">▤</span>
+        </header>
+        <div class="tech-stats">
+          <div><b id="tech-count">—</b><span>已研发科技</span></div>
+          <div><b id="building-levels">—</b><span>建筑总等级</span></div>
+          <div><b id="building-count">—</b><span>建筑数</span></div>
+        </div>
+        <div class="mini-head" style="margin-top:12px">主要建筑</div>
+        <div id="top-building-list" class="mini-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <!-- 设置 -->
+  <div class="modal-backdrop" id="settings-modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+      <header class="modal-head">
+        <div><span class="panel-kicker">朝政设置</span><h2 id="settings-title">朝 政 设 置</h2></div>
+        <button class="icon-btn" id="settings-close" title="关闭">×</button>
+      </header>
+      <div class="modal-body">
+        <div class="settings-grid">
+          <label class="field full"><span>模型服务商</span><select id="set-provider"></select></label>
+          <label class="field"><span>模型</span><input id="set-model" type="text" spellcheck="false"></label>
+          <label class="field"><span>接口地址</span><input id="set-base-url" type="text" spellcheck="false"></label>
+          <label class="field full"><span>接口密钥（留空保持不变）</span><input id="set-api-key" type="password" spellcheck="false" placeholder="仅本地保存到 v3ai/config.json"></label>
+          <label class="field"><span>决策模式 <span class="help" data-tip="单次决策：运行时先算好建造/PM 候选，模型一次输出动作，快但只能从候选里选。&#10;工具决策：模型可自主调用 18/27 个工具查证，信息更全但本地模型会慢很多。">?</span></span>
+            <select id="set-mode" title="单次决策快；工具决策自主查证">
+              <option value="oneshot">单次决策（快）</option>
+              <option value="tools">工具决策（自主查证）</option>
+            </select>
+          </label>
+          <label class="field"><span>工具集 <span class="help" data-tip="核心（18 个）：概况、州/建筑/市场、产值、生产方式、建造候选、提议、审查结果。&#10;完整（27 个）：额外含科技、法律、政治、历史、待办、手动执行等。仅工具决策模式使用。">?</span></span>
+            <select id="set-toolset" title="核心 18 个；完整 27 个（仅工具决策模式使用）">
+              <option value="core">核心（18 个）</option>
+              <option value="full">完整（27 个）</option>
+            </select>
+          </label>
+          <label class="field"><span>每轮动作上限 <span class="help" data-tip="0 = 不限制。非 0 时，审查层会按这个上限拦截超出本回合的动作。">?</span></span><input id="set-actions" type="number" min="0" max="8" title="0 = 不限制"></label>
+          <label class="field"><span>单动作等级上限 <span class="help" data-tip="0 = 不限制。非 0 时会限制单条建造的最大等级数，例如 5 表示一次最多 +5 级。">?</span></span><input id="set-levels" type="number" min="0" max="10" title="0 = 不限制"></label>
+          <label class="field"><span>思考上下文上限（字符） <span class="help" data-tip="手动设置，不是自动。0 = 不限制。非 0 时优先截断最长的工具结果，再截断最长正文；保留 tool_call_id 配对。">?</span></span><input id="set-context" type="number" min="0" max="4000000" title="手动设置；0 = 不限制"></label>
+          <label class="field"><span>思考输出上限（tokens） <span class="help" data-tip="手动设置单次模型回复的 max_tokens；0 = 不限制。只限制输出，不限制输入上下文。">?</span></span><input id="set-max-tokens" type="number" min="0" max="131072" title="手动设置；0 = 不限制"></label>
+          <label class="field"><span>工具结果字符上限 <span class="help" data-tip="0 = 不限制。单个工具返回给模型的 JSON 最大字符数；越小越省上下文，但细节越少。">?</span></span><input id="set-tool-chars" type="number" min="0" max="2000000" title="0 = 不限制"></label>
+          <label class="field"><span>历史轮数 <span class="help" data-tip="0 = 不限制。每轮带给模型的最近决策摘要条数；0 会带上全部历史，容易撑上下文。">?</span></span><input id="set-history" type="number" min="0" max="10000" title="0 = 不限制"></label>
+          <label class="field"><span>工具循环上限 <span class="help" data-tip="0 = 不限制（内部最多 200 轮）。仅工具决策模式使用；单次决策不使用工具循环。">?</span></span><input id="set-rounds" type="number" min="0" max="200" title="0 = 不限制"></label>
+          <label class="field"><span>页面刷新</span>
+            <select id="set-refresh">
+              <option value="2000">2 秒</option>
+              <option value="3000">3 秒</option>
+              <option value="5000">5 秒</option>
+              <option value="10000">10 秒</option>
+            </select>
+          </label>
+          <label class="field checkbox"><input id="set-freeze" type="checkbox"><span>回合内冻结世界数据</span></label>
+          <label class="field checkbox"><input id="set-loop-enabled" type="checkbox"><span>连续模式（一轮结束后自动下一轮）</span></label>
+          <label class="field"><span>轮间隔（秒） <span class="help" data-tip="0 = 上一轮结束后立刻开始下一轮；例如 20 表示等 20 秒。连续模式关闭时无效。">?</span></span><input id="set-loop-interval" type="number" min="0" max="3600" title="0 = 立刻"></label>
+          <label class="field checkbox"><input id="set-loop-execute" type="checkbox"><span>连续模式自动执行本轮动作</span></label>
+          <label class="field checkbox"><input id="set-loop-stale" type="checkbox"><span>快照过期时暂停连续模式</span></label>
+        </div>
+        <div class="settings-note" id="settings-status">设置会写入 v3ai/config.json；模型/服务商切换立即生效。</div>
+      </div>
+      <footer class="modal-foot">
+        <button class="ghost-btn" id="settings-test">测试连接</button>
+        <button class="gold-btn" id="settings-save">保存设置</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- DLL 扫描启动遮罩：扫描完成前锁定操作 -->
+  <div class="modal-backdrop scan-backdrop" id="scan-modal" hidden>
+    <div class="scan-card" role="dialog" aria-modal="true" aria-labelledby="scan-title">
+      <div class="scan-kicker">服务启动</div>
+      <h2 id="scan-title">正在启动服务</h2>
+      <div class="scan-step" id="scan-step">准备注入 DLL…</div>
+      <div class="scan-big-progress"><i id="scan-big-fill"></i></div>
+      <div class="scan-percent" id="scan-percent">0%</div>
+      <div class="scan-detail" id="scan-detail">DLL 扫描完成前，决策与连续模式已锁定。</div>
+      <div class="scan-lock">扫描完成后自动解锁，并提示“服务已就绪”。</div>
+    </div>
+  </div>
+
+  <!-- 策略编辑 -->
+  <div class="modal-backdrop" id="strategy-modal" hidden>
+    <div class="modal wide" role="dialog" aria-modal="true" aria-labelledby="strategy-title">
+      <header class="modal-head">
+        <div><span class="panel-kicker">方略编修</span><h2 id="strategy-title">方 略 编 修</h2></div>
+        <button class="icon-btn" id="strategy-close" title="关闭">×</button>
+      </header>
+      <div class="modal-body">
+        <div class="strategy-help">
+          玩家直接填表即可；也可点“AI 起草”让模型给一版草稿，或“AI 应用”直接生效。
+          `0` 表示不限制；目标权重不必加起来等于 100，审查层只执行硬约束。
+        </div>
+        <div class="strategy-form">
+          <div class="settings-grid">
+            <label class="field full"><span>方略名称</span><input id="st-name" type="text"></label>
+            <label class="field full"><span>理由 / 备注</span><textarea id="st-rationale" rows="2"></textarea></label>
+          </div>
+
+          <div class="form-section" id="st-build-section">
+            <div class="form-head"><span>建造策略 · 目标权重</span><button class="ghost-btn" id="st-add-obj">+ 目标</button></div>
+            <div id="st-objectives" class="obj-list"></div>
+          </div>
+
+          <div class="form-section" id="st-dev-section">
+            <div class="form-head"><span>区域策略 · 建设区域</span></div>
+            <div class="settings-grid">
+              <label class="field"><span>区域发展策略</span>
+                <select id="st-dev-mode">
+                  <option value="nationwide">全国所有省份共同发展</option>
+                  <option value="core">核心省份优先（人口/产值）</option>
+                  <option value="coastal">沿海省份优先</option>
+                  <option value="agriculture">农业省份优先</option>
+                  <option value="resources">资源省份优先</option>
+                  <option value="capital">京畿/首都优先</option>
+                  <option value="balanced">区域均衡</option>
+                  <option value="custom">自定义省份（自由选择）</option>
+                </select>
+              </label>
+              <label class="field"><span>每轮最多涉及州数（0=不限）</span><input id="st-dev-max" type="number" min="0" max="64"></label>
+              <label class="field full"><span>区域策略备注</span><input id="st-dev-notes" type="text"></label>
+            </div>
+            <div class="state-picker-head">
+              <span>自由选择重点省份（自定义模式生效）</span>
+              <span><button class="ghost-btn" id="st-states-all">全选</button><button class="ghost-btn" id="st-states-none">清空</button></span>
+            </div>
+            <div id="st-state-list" class="state-list"></div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-head"><span>硬约束</span></div>
+            <div class="settings-grid">
+              <label class="field"><span>每轮动作上限（0=不限）</span><input id="st-max-actions" type="number" min="0" max="64"></label>
+              <label class="field"><span>单动作等级（0=不限）</span><input id="st-max-levels" type="number" min="0" max="64"></label>
+              <label class="field"><span>国库下限</span><input id="st-min-treasury" type="number" min="0"></label>
+              <label class="field checkbox"><input id="st-cond-pm" type="checkbox"><span>允许使用“条件无法确认”的生产方式 <span class="help" data-tip="PM = 生产方式（Production Method）。&#10;“条件无法确认”表示 MOD/游戏数据里缺少足够的解锁条件（公司、原则、地理、宗教、法律等），系统无法确认当前是否真的可用。&#10;默认关闭：审查层会拦截；只有你确认该 PM 实际可用时才建议打开。">?</span></span></label>
+              <label class="field full"><span>禁用的生产方式（逗号分隔，如 worker_exploitation_）</span><input id="st-block-pm" type="text"></label>
+              <div class="field"><span>优先建筑</span><input id="st-priority-search" type="text" placeholder="搜索建筑…"><div id="st-priority-list" class="building-picker"></div></div>
+              <div class="field"><span>禁建建筑</span><input id="st-forbidden-search" type="text" placeholder="搜索建筑…"><div id="st-forbidden-list" class="building-picker"></div></div>
+            </div>
+          </div>
+
+          <label class="field"><span>补充说明</span><textarea id="st-notes" rows="2"></textarea></label>
+        </div>
+        <div class="settings-note" id="strategy-status">加载中…</div>
+      </div>
+      <footer class="modal-foot">
+        <button class="ghost-btn" id="strategy-ai">AI 起草</button>
+        <button class="ghost-btn" id="strategy-ai-apply">AI 应用</button>
+        <button class="ghost-btn" id="strategy-reset">重置默认</button>
+        <button class="gold-btn" id="strategy-save">保存策略</button>
+      </footer>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

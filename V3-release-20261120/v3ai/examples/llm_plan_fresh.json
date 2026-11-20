@@ -1,0 +1,12 @@
+{
+  "actions": [
+    {"kind": "build", "state_id": 925, "building": "building_banana_plantation", "levels": 5,
+     "rationale": "LLM 旧计划：广东香蕉（当前队列已有 1 级，应被审查拦下）"},
+    {"kind": "build", "state_id": 910, "building": "building_banana_plantation", "levels": 5,
+     "rationale": "LLM 旧计划：邵州香蕉"},
+    {"kind": "build", "state_id": 24, "building": "building_tea_plantation", "levels": 5,
+     "rationale": "LLM 旧计划：苏州茶叶"},
+    {"kind": "build", "state_id": 23, "building": "building_tea_plantation", "levels": 5,
+     "rationale": "LLM 旧计划：山东茶叶"}
+  ]
+}

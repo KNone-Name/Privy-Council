@@ -1,0 +1,12 @@
+{
+  "actions": [
+    {"kind": "build", "state_id": 907, "building": "building_tea_plantation", "levels": 2,
+     "rationale": "四川有茶资源，扩茶"},
+    {"kind": "build", "state_id": 914, "building": "building_tea_plantation", "levels": 1,
+     "rationale": "北京没有茶资源，应被拒"},
+    {"kind": "pm", "state_id": 928, "building": "building_textile_mill",
+     "pm": "pm_no_luxury_clothes", "rationale": "可用 PM"},
+    {"kind": "pm", "state_id": 928, "building": "building_textile_mill",
+     "pm": "pm_sewing_machines", "rationale": "缺科技，应被拒"}
+  ]
+}

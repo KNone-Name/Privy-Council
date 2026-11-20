@@ -1,0 +1,8 @@
+{
+  "base_url": "http://127.0.0.1:18200/v1",
+  "model": "kvmem-polystrata-qwen35",
+  "api_key": "",
+  "temperature": 0.7,
+  "max_tokens": 2048,
+  "timeout_s": 300
+}

@@ -1,0 +1,24 @@
+{
+  "name": "大清工业化（示例）",
+  "rationale": "先扩建造力与出口品，控制激进派；禁止为了 GDP 切工人剥削 PM。",
+  "objectives": [
+    {"metric": "gdp_growth", "weight": 0.35, "direction": "max"},
+    {"metric": "weekly_balance", "weight": 0.2, "direction": "max"},
+    {"metric": "standard_of_living", "weight": 0.2, "direction": "max"},
+    {"metric": "radicals", "weight": 0.15, "direction": "min"},
+    {"metric": "construction_capacity", "weight": 0.1, "direction": "max"}
+  ],
+  "constraints": {
+    "max_actions_per_cycle": 6,
+    "max_levels_per_action": 3,
+    "max_build_actions_per_cycle": 4,
+    "max_pm_actions_per_cycle": 2,
+    "min_treasury": 500000,
+    "allow_conditional_pm": false,
+    "block_pm_patterns": ["worker_exploitation_"],
+    "warn_pm_patterns": ["pm_simple_organization"],
+    "priority_buildings": ["building_construction_sector", "building_tea_plantation"],
+    "forbidden_buildings": []
+  },
+  "notes": "示例策略；实际权重请按局势调。"
+}

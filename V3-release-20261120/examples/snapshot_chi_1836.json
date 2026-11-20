@@ -1,0 +1,6280 @@
+{
+  "game": {
+    "source": "save",
+    "captured_at": "2026-11-12T01:54:50+08:00",
+    "game_version": "1.15.0",
+    "game_dir": "E:\\SteamLibrary\\steamapps\\common\\Victoria 3\\game",
+    "exe_path": null,
+    "pid": null,
+    "module_base": null,
+    "process_start": null,
+    "save_path": "D:\\Game\\ai\\Victoria3-RE\\data\\saves\\save.txt",
+    "save_date": "1836.1.1",
+    "save_name": "大清",
+    "notes": []
+  },
+  "country": {
+    "id": 157,
+    "tag": "CHI",
+    "name": null,
+    "market_id": 49,
+    "religion": "confucian",
+    "treasury": 4242494.15543,
+    "credit_limit": null,
+    "loan_principal": null,
+    "base_wage": 432.47863,
+    "population": 366405617,
+    "gdp": 84674628.3968,
+    "budget": {
+      "income": [
+        0.0,
+        0.0,
+        163128.77405,
+        0.0,
+        0.0,
+        7345.16021,
+        0.0,
+        0.0,
+        500.0,
+        4887.5,
+        1717.48627,
+        950.0,
+        375.0,
+        0.0,
+        0.0,
+        46.88732
+      ],
+      "expenses": [
+        0.0,
+        0.0,
+        75665.74077,
+        42022.65035,
+        0.0,
+        3155.1276,
+        35948.60663,
+        0.0,
+        1379.67343,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2564.65905,
+        0.0,
+        1779.63,
+        3095.75289,
+        0.0,
+        115.2,
+        14.93998,
+        434.39568
+      ],
+      "income_total": 178950.80785,
+      "expense_total": 166176.37638,
+      "balance": 12774.43147000001,
+      "tax_level": null,
+      "weekly_investment_pool": 549342.30213
+    }
+  },
+  "states": [
+    {
+      "id": 23,
+      "owner": 157,
+      "capital": 8235,
+      "arable_land": 350,
+      "infrastructure": 91.0,
+      "infrastructure_used": 47.0,
+      "population": 15176000,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 24,
+      "owner": 157,
+      "capital": 7556,
+      "arable_land": 400,
+      "infrastructure": 96.3,
+      "infrastructure_used": 42.7,
+      "population": 17672008,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 216,
+      "owner": 157,
+      "capital": 8702,
+      "arable_land": 40,
+      "infrastructure": 12.47988,
+      "infrastructure_used": 8.0,
+      "population": 340996,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 217,
+      "owner": 157,
+      "capital": 8322,
+      "arable_land": 30,
+      "infrastructure": 10.75869,
+      "infrastructure_used": 3.0,
+      "population": 283623,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 905,
+      "owner": 157,
+      "capital": 38145,
+      "arable_land": 30,
+      "infrastructure": 9.456,
+      "infrastructure_used": 2.0,
+      "population": 240200,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 906,
+      "owner": 157,
+      "capital": 38480,
+      "arable_land": 40,
+      "infrastructure": 12.606,
+      "infrastructure_used": 2.0,
+      "population": 370200,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 907,
+      "owner": 157,
+      "capital": 7011,
+      "arable_land": 330,
+      "infrastructure": 83.0,
+      "infrastructure_used": 46.1,
+      "population": 14003796,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 908,
+      "owner": 157,
+      "capital": 7114,
+      "arable_land": 150,
+      "infrastructure": 83.0,
+      "infrastructure_used": 36.0,
+      "population": 6238388,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 909,
+      "owner": 157,
+      "capital": 7168,
+      "arable_land": 110,
+      "infrastructure": 78.0,
+      "infrastructure_used": 56.5,
+      "population": 4638128,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 910,
+      "owner": 157,
+      "capital": 7218,
+      "arable_land": 200,
+      "infrastructure": 76.3,
+      "infrastructure_used": 41.2,
+      "population": 8913992,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 911,
+      "owner": 157,
+      "capital": 7585,
+      "arable_land": 11,
+      "infrastructure": 2.84364,
+      "infrastructure_used": 4.4,
+      "population": 44788,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 912,
+      "owner": 157,
+      "capital": 7661,
+      "arable_land": 102,
+      "infrastructure": 73.5,
+      "infrastructure_used": 2.6,
+      "population": 2135417,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 913,
+      "owner": 157,
+      "capital": 7226,
+      "arable_land": 400,
+      "infrastructure": 78.0,
+      "infrastructure_used": 60.0,
+      "population": 14938908,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 914,
+      "owner": 157,
+      "capital": 7836,
+      "arable_land": 340,
+      "infrastructure": 93.0,
+      "infrastructure_used": 53.8,
+      "population": 15029015,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 915,
+      "owner": 157,
+      "capital": 8801,
+      "arable_land": 75,
+      "infrastructure": 71.48166,
+      "infrastructure_used": null,
+      "population": 2174021,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 916,
+      "owner": 157,
+      "capital": 8874,
+      "arable_land": 25,
+      "infrastructure": 4.644,
+      "infrastructure_used": 1.0,
+      "population": 76000,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 917,
+      "owner": 157,
+      "capital": 8945,
+      "arable_land": 200,
+      "infrastructure": 63.0,
+      "infrastructure_used": 28.1,
+      "population": 8819196,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 918,
+      "owner": 157,
+      "capital": 9053,
+      "arable_land": 140,
+      "infrastructure": 63.0,
+      "infrastructure_used": 12.0,
+      "population": 3089604,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 919,
+      "owner": 157,
+      "capital": 7921,
+      "arable_land": 375,
+      "infrastructure": 78.0,
+      "infrastructure_used": 15.0,
+      "population": 14840084,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 920,
+      "owner": 157,
+      "capital": 7968,
+      "arable_land": 200,
+      "infrastructure": 78.0,
+      "infrastructure_used": 8.0,
+      "population": 8820588,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 921,
+      "owner": 157,
+      "capital": 8032,
+      "arable_land": 150,
+      "infrastructure": 63.0,
+      "infrastructure_used": 7.0,
+      "population": 6429641,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 922,
+      "owner": 157,
+      "capital": 8076,
+      "arable_land": 250,
+      "infrastructure": 63.0,
+      "infrastructure_used": 11.0,
+      "population": 9695792,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 923,
+      "owner": 157,
+      "capital": 40207,
+      "arable_land": 60,
+      "infrastructure": 50.94012,
+      "infrastructure_used": 7.0,
+      "population": 1248004,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 924,
+      "owner": 157,
+      "capital": 7291,
+      "arable_land": 500,
+      "infrastructure": 83.0,
+      "infrastructure_used": 39.0,
+      "population": 20092808,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 925,
+      "owner": 157,
+      "capital": 7348,
+      "arable_land": 317,
+      "infrastructure": 154.375,
+      "infrastructure_used": 103.8,
+      "population": 12662392,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 927,
+      "owner": 157,
+      "capital": 7359,
+      "arable_land": 400,
+      "infrastructure": 73.0,
+      "infrastructure_used": 49.8,
+      "population": 16324832,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 928,
+      "owner": 157,
+      "capital": 7401,
+      "arable_land": 250,
+      "infrastructure": 73.0,
+      "infrastructure_used": 43.2,
+      "population": 9473000,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 929,
+      "owner": 157,
+      "capital": 7410,
+      "arable_land": 360,
+      "infrastructure": 83.0,
+      "infrastructure_used": 51.0,
+      "population": 11132284,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 930,
+      "owner": 157,
+      "capital": 8114,
+      "arable_land": 280,
+      "infrastructure": 73.0,
+      "infrastructure_used": 44.5,
+      "population": 10993608,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 931,
+      "owner": 157,
+      "capital": 8142,
+      "arable_land": 500,
+      "infrastructure": 78.0,
+      "infrastructure_used": 35.0,
+      "population": 20936384,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 932,
+      "owner": 157,
+      "capital": 8173,
+      "arable_land": 200,
+      "infrastructure": 88.0,
+      "infrastructure_used": 47.5,
+      "population": 8503121,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 933,
+      "owner": 157,
+      "capital": 7444,
+      "arable_land": 600,
+      "infrastructure": 83.0,
+      "infrastructure_used": 51.5,
+      "population": 24213496,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 934,
+      "owner": 157,
+      "capital": 7468,
+      "arable_land": 550,
+      "infrastructure": 83.0,
+      "infrastructure_used": 58.0,
+      "population": 22832408,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 935,
+      "owner": 157,
+      "capital": 8192,
+      "arable_land": 270,
+      "infrastructure": 63.0,
+      "infrastructure_used": 31.0,
+      "population": 10662000,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 936,
+      "owner": 157,
+      "capital": 7472,
+      "arable_land": 320,
+      "infrastructure": 83.0,
+      "infrastructure_used": 54.5,
+      "population": 13150000,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 937,
+      "owner": 157,
+      "capital": 7499,
+      "arable_land": 320,
+      "infrastructure": 83.0,
+      "infrastructure_used": 54.5,
+      "population": 13524896,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 938,
+      "owner": 157,
+      "capital": 7525,
+      "arable_land": 330,
+      "infrastructure": 83.0,
+      "infrastructure_used": 31.0,
+      "population": 13399992,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 939,
+      "owner": 157,
+      "capital": 7555,
+      "arable_land": 80,
+      "infrastructure": 73.0,
+      "infrastructure_used": 14.0,
+      "population": 2901500,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 966,
+      "owner": 157,
+      "capital": 37912,
+      "arable_land": 24,
+      "infrastructure": 4.89756,
+      "infrastructure_used": 1.0,
+      "population": 88252,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 975,
+      "owner": 157,
+      "capital": 38856,
+      "arable_land": 50,
+      "infrastructure": 6.25926,
+      "infrastructure_used": 2.0,
+      "population": 133642,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 984,
+      "owner": 157,
+      "capital": 11224,
+      "arable_land": 15,
+      "infrastructure": 11.22,
+      "infrastructure_used": null,
+      "population": 49000,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 1132,
+      "owner": 157,
+      "capital": 15700,
+      "arable_land": 10,
+      "infrastructure": 3.18,
+      "infrastructure_used": null,
+      "population": 31000,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    },
+    {
+      "id": 1135,
+      "owner": 157,
+      "capital": 10561,
+      "arable_land": 30,
+      "infrastructure": 4.8523,
+      "infrastructure_used": null,
+      "population": 82613,
+      "population_lower": null,
+      "population_middle": null,
+      "population_upper": null,
+      "radicals": null,
+      "unemployed": null,
+      "laborers": null,
+      "local_prices": null,
+      "market_supply": null,
+      "market_demand": null
+    }
+  ],
+  "buildings": [
+    {
+      "type": "building_wheat_farm",
+      "state_id": 966,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.01,
+      "production_methods": [
+        "pm_simple_farming",
+        "pm_no_secondary",
+        "pm_tools_disabled"
+      ],
+      "id": 2800,
+      "profit": 96.7505,
+      "salary_rate": 128.7311,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 966,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 2801,
+      "profit": 324.33799,
+      "salary_rate": 128.7311,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_wheat_farm",
+      "state_id": 975,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.01,
+      "production_methods": [
+        "pm_simple_farming",
+        "pm_no_secondary",
+        "pm_tools_disabled"
+      ],
+      "id": 2802,
+      "profit": 177.6733,
+      "salary_rate": 133.40271,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 975,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 2803,
+      "profit": 531.89522,
+      "salary_rate": 133.40271,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_logging_camp",
+      "state_id": 975,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.01,
+      "production_methods": [
+        "pm_simple_forestry",
+        "pm_no_hardwood",
+        "pm_no_equipment",
+        "pm_road_carts"
+      ],
+      "id": 2804,
+      "profit": 332.92858,
+      "salary_rate": 133.40271,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_livestock_ranch",
+      "state_id": 905,
+      "levels": 2,
+      "staffing": 2.0,
+      "throughput": 1.02,
+      "production_methods": [
+        "pm_open_air_stockyards",
+        "pm_simple_ranch",
+        "pm_standard_fences",
+        "pm_unrefrigerated"
+      ],
+      "id": 3124,
+      "profit": 469.41863,
+      "salary_rate": 153.63602,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 905,
+      "levels": 12,
+      "staffing": 12.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3125,
+      "profit": 1123.5116,
+      "salary_rate": 124.44518,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_livestock_ranch",
+      "state_id": 906,
+      "levels": 2,
+      "staffing": 2.0,
+      "throughput": 0.92,
+      "production_methods": [
+        "pm_open_air_stockyards",
+        "pm_simple_ranch",
+        "pm_standard_fences",
+        "pm_unrefrigerated"
+      ],
+      "id": 3126,
+      "profit": 455.94976,
+      "salary_rate": 157.78455,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 906,
+      "levels": 18,
+      "staffing": 18.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3127,
+      "profit": 1400.74921,
+      "salary_rate": 127.80549,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 907,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3128,
+      "profit": -3571.69131,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_logging_camp",
+      "state_id": 907,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "pm_road_carts",
+        "pm_no_hardwood",
+        "pm_no_equipment",
+        "pm_saw_mills"
+      ],
+      "id": 3129,
+      "profit": 7223.50765,
+      "salary_rate": 157.78549,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_opium_plantation",
+      "state_id": 907,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.21,
+      "production_methods": [
+        "default_building_opium_plantation",
+        "pm_road_carts"
+      ],
+      "id": 3130,
+      "profit": 7727.92303,
+      "salary_rate": 240.48999,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 907,
+      "levels": 330,
+      "staffing": 330.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3131,
+      "profit": 38925.65661,
+      "salary_rate": 129.09724,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_paper_mill",
+      "state_id": 907,
+      "levels": 12,
+      "staffing": 12.0,
+      "throughput": 1.12,
+      "production_methods": [
+        "pm_pulp_pressing",
+        "pm_automation_disabled"
+      ],
+      "id": 3132,
+      "profit": 4285.05653,
+      "salary_rate": 116.18752,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 908,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3133,
+      "profit": -3653.56677,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_logging_camp",
+      "state_id": 908,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_road_carts",
+        "pm_no_hardwood",
+        "pm_no_equipment",
+        "pm_saw_mills"
+      ],
+      "id": 3134,
+      "profit": 3497.12378,
+      "salary_rate": 157.39635,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 908,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3135,
+      "profit": 6532.56039,
+      "salary_rate": 143.08758,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 908,
+      "levels": 150,
+      "staffing": 150.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3136,
+      "profit": 33458.5789,
+      "salary_rate": 143.08758,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_opium_plantation",
+      "state_id": 908,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "default_building_opium_plantation",
+        "pm_road_carts"
+      ],
+      "id": 3137,
+      "profit": 11407.04804,
+      "salary_rate": 266.55206,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 909,
+      "levels": 9,
+      "staffing": 9.0,
+      "throughput": 1.09,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3138,
+      "profit": -5691.55532,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_furniture_manufactory",
+      "state_id": 909,
+      "levels": 7,
+      "staffing": 7.0,
+      "throughput": 1.07,
+      "production_methods": [
+        "pm_handcrafted_furniture",
+        "pm_automation_disabled",
+        "pm_luxury_furniture"
+      ],
+      "id": 3139,
+      "profit": -653.08769,
+      "salary_rate": 157.35994,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_glassworks",
+      "state_id": 909,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "pm_forest_glass",
+        "pm_manual_glassblowing",
+        "pm_ceramics"
+      ],
+      "id": 3140,
+      "profit": -670.90604,
+      "salary_rate": 128.74905,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_logging_camp",
+      "state_id": 909,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_road_carts",
+        "pm_saw_mills",
+        "pm_no_equipment",
+        "pm_hardwood"
+      ],
+      "id": 3141,
+      "profit": 7206.81275,
+      "salary_rate": 192.32881,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_opium_plantation",
+      "state_id": 909,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "default_building_opium_plantation",
+        "pm_road_carts"
+      ],
+      "id": 3142,
+      "profit": 4965.80271,
+      "salary_rate": 299.09137,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 909,
+      "levels": 104,
+      "staffing": 104.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3143,
+      "profit": 21101.81045,
+      "salary_rate": 143.0545,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_dye_plantation",
+      "state_id": 909,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "default_building_dye_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3144,
+      "profit": 1126.7872,
+      "salary_rate": 218.03762,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 909,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3145,
+      "profit": 3154.56534,
+      "salary_rate": 269.18224,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 910,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3146,
+      "profit": -3653.56677,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_iron_mine",
+      "state_id": 910,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.01,
+      "production_methods": [
+        "pm_picks_and_shovels_building_iron_mine",
+        "pm_no_explosives",
+        "pm_no_steam_automation",
+        "pm_road_carts"
+      ],
+      "id": 3147,
+      "profit": 193.61841,
+      "salary_rate": 138.01814,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_rice_farm",
+      "state_id": 910,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "pm_simple_farming_building_rice_farm",
+        "pm_tools_disabled",
+        "pm_fig_orchards_building_rice_farm"
+      ],
+      "id": 3148,
+      "profit": 4711.37214,
+      "salary_rate": 259.70544,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 910,
+      "levels": 200,
+      "staffing": 200.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3149,
+      "profit": 34184.61743,
+      "salary_rate": 153.35348,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 910,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3150,
+      "profit": 4041.62948,
+      "salary_rate": 189.32527,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_dye_plantation",
+      "state_id": 910,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "default_building_dye_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3151,
+      "profit": 1135.09848,
+      "salary_rate": 153.35348,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_silk_plantation",
+      "state_id": 910,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.35,
+      "production_methods": [
+        "default_building_silk_plantation",
+        "pm_road_carts"
+      ],
+      "id": 3152,
+      "profit": 4491.28455,
+      "salary_rate": 153.35348,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_port",
+      "state_id": 910,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "pm_basic_port"
+      ],
+      "id": 3153,
+      "profit": null,
+      "salary_rate": 170.39275,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_naval_fortification",
+      "state_id": 910,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_naval_fortification_basic"
+      ],
+      "id": 3154,
+      "profit": -494.83306,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_livestock_ranch",
+      "state_id": 911,
+      "levels": 2,
+      "staffing": 0.8862,
+      "throughput": 0.90886,
+      "production_methods": [
+        "pm_open_air_stockyards",
+        "pm_simple_ranch",
+        "pm_standard_fences",
+        "pm_unrefrigerated"
+      ],
+      "id": 3155,
+      "profit": 138.96056,
+      "salary_rate": 129.2256,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 911,
+      "levels": 5,
+      "staffing": 2.20665,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3156,
+      "profit": 208.45187,
+      "salary_rate": 129.2256,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_wheat_farm",
+      "state_id": 911,
+      "levels": 2,
+      "staffing": 0.8862,
+      "throughput": 0.80886,
+      "production_methods": [
+        "pm_simple_farming",
+        "pm_no_secondary",
+        "pm_tools_disabled"
+      ],
+      "id": 3157,
+      "profit": 78.48735,
+      "salary_rate": 129.2256,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_livestock_ranch",
+      "state_id": 912,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.11,
+      "production_methods": [
+        "pm_open_air_stockyards",
+        "pm_simple_ranch",
+        "pm_standard_fences",
+        "pm_unrefrigerated"
+      ],
+      "id": 3158,
+      "profit": 310.29524,
+      "salary_rate": 119.7298,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 912,
+      "levels": 102,
+      "staffing": 102.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3159,
+      "profit": 6976.34328,
+      "salary_rate": 78.55473,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 913,
+      "levels": 7,
+      "staffing": 7.0,
+      "throughput": 1.07,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3160,
+      "profit": -4371.78649,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_banana_plantation",
+      "state_id": 913,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "default_building_banana_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3161,
+      "profit": 6984.92327,
+      "salary_rate": 137.43082,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 913,
+      "levels": 379,
+      "staffing": 379.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3162,
+      "profit": 60354.55832,
+      "salary_rate": 137.43082,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_rice_farm",
+      "state_id": 913,
+      "levels": 7,
+      "staffing": 7.0,
+      "throughput": 1.07,
+      "production_methods": [
+        "pm_simple_farming_building_rice_farm",
+        "pm_tools_disabled",
+        "pm_fig_orchards_building_rice_farm"
+      ],
+      "id": 3163,
+      "profit": 3713.47255,
+      "salary_rate": 152.70091,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 913,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3164,
+      "profit": 6753.2418,
+      "salary_rate": 209.46625,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_dye_plantation",
+      "state_id": 913,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "default_building_dye_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3165,
+      "profit": 2145.58112,
+      "salary_rate": 137.43082,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_silk_plantation",
+      "state_id": 913,
+      "levels": 16,
+      "staffing": 16.0,
+      "throughput": 1.41,
+      "production_methods": [
+        "default_building_silk_plantation",
+        "pm_road_carts"
+      ],
+      "id": 3166,
+      "profit": 7293.41203,
+      "salary_rate": 137.43082,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 914,
+      "levels": 16,
+      "staffing": 16.0,
+      "throughput": 1.16,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3167,
+      "profit": -10558.15063,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_construction_sector",
+      "state_id": 914,
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_wooden_buildings"
+      ],
+      "id": 3168,
+      "profit": -183.91152,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_arms_industry",
+      "state_id": 914,
+      "levels": 4,
+      "staffing": 3.998,
+      "throughput": 1.03998,
+      "production_methods": [
+        "pm_muskets",
+        "pm_automation_disabled"
+      ],
+      "id": 3169,
+      "profit": -2564.65905,
+      "salary_rate": 138.88418,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tooling_workshop",
+      "state_id": 914,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_automation_disabled",
+        "pm_pig_iron"
+      ],
+      "id": 3170,
+      "profit": 878.08105,
+      "salary_rate": 124.99577,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_furniture_manufactory",
+      "state_id": 914,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "pm_handcrafted_furniture",
+        "pm_automation_disabled",
+        "pm_luxury_furniture"
+      ],
+      "id": 3171,
+      "profit": 320.80608,
+      "salary_rate": 152.77258,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_wheat_farm",
+      "state_id": 914,
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 1.03,
+      "production_methods": [
+        "pm_simple_farming",
+        "pm_tools_disabled",
+        "pm_citrus_orchards"
+      ],
+      "id": 3172,
+      "profit": 1151.19005,
+      "salary_rate": 235.20154,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 914,
+      "levels": 340,
+      "staffing": 340.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3173,
+      "profit": 28916.26396,
+      "salary_rate": 138.88418,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_logging_camp",
+      "state_id": 914,
+      "levels": 2,
+      "staffing": 2.0,
+      "throughput": 1.02,
+      "production_methods": [
+        "pm_road_carts",
+        "pm_no_hardwood",
+        "pm_no_equipment",
+        "pm_saw_mills"
+      ],
+      "id": 3174,
+      "profit": 1983.44815,
+      "salary_rate": 186.72204,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_forbidden_city",
+      "state_id": 914,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_default_building_forbidden_city"
+      ],
+      "id": 3175,
+      "profit": -172.55896,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_naval_fortification",
+      "state_id": 914,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_naval_fortification_basic"
+      ],
+      "id": 3176,
+      "profit": -447.46201,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 917,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3177,
+      "profit": -2451.03905,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_iron_mine",
+      "state_id": 917,
+      "levels": 4,
+      "staffing": 3.998,
+      "throughput": 1.03998,
+      "production_methods": [
+        "pm_picks_and_shovels_building_iron_mine",
+        "pm_no_explosives",
+        "pm_no_steam_automation",
+        "pm_road_carts"
+      ],
+      "id": 3178,
+      "profit": 696.0656,
+      "salary_rate": 127.98802,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_logging_camp",
+      "state_id": 917,
+      "levels": 9,
+      "staffing": 9.0,
+      "throughput": 1.09,
+      "production_methods": [
+        "pm_road_carts",
+        "pm_saw_mills",
+        "pm_no_equipment",
+        "pm_hardwood"
+      ],
+      "id": 3179,
+      "profit": 5841.05319,
+      "salary_rate": 156.4298,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_livestock_ranch",
+      "state_id": 917,
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 1.03,
+      "production_methods": [
+        "pm_open_air_stockyards",
+        "pm_simple_ranch",
+        "pm_standard_fences",
+        "pm_unrefrigerated"
+      ],
+      "id": 3180,
+      "profit": 1174.25212,
+      "salary_rate": 127.98802,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 917,
+      "levels": 200,
+      "staffing": 200.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3181,
+      "profit": 19337.71319,
+      "salary_rate": 142.20891,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_logging_camp",
+      "state_id": 918,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "pm_road_carts",
+        "pm_saw_mills",
+        "pm_no_equipment",
+        "pm_hardwood"
+      ],
+      "id": 3182,
+      "profit": 5249.53786,
+      "salary_rate": 134.97104,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_livestock_ranch",
+      "state_id": 918,
+      "levels": 2,
+      "staffing": 2.0,
+      "throughput": 1.12,
+      "production_methods": [
+        "pm_open_air_stockyards",
+        "pm_simple_ranch",
+        "pm_standard_fences",
+        "pm_unrefrigerated"
+      ],
+      "id": 3183,
+      "profit": 637.93186,
+      "salary_rate": 151.48266,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 918,
+      "levels": 140,
+      "staffing": 140.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3184,
+      "profit": 7959.01069,
+      "salary_rate": 110.43087,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 919,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3185,
+      "profit": -3653.56677,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_wheat_farm",
+      "state_id": 919,
+      "levels": 7,
+      "staffing": 7.0,
+      "throughput": 1.22,
+      "production_methods": [
+        "pm_simple_farming",
+        "pm_tools_disabled",
+        "pm_citrus_orchards"
+      ],
+      "id": 3186,
+      "profit": 2989.90146,
+      "salary_rate": 174.07348,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 919,
+      "levels": 367,
+      "staffing": 367.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3187,
+      "profit": 32786.9478,
+      "salary_rate": 92.50981,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 920,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3188,
+      "profit": -2405.17671,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 920,
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 1.03,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3189,
+      "profit": 2429.89276,
+      "salary_rate": 184.00825,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 920,
+      "levels": 200,
+      "staffing": 200.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3190,
+      "profit": 17732.46368,
+      "salary_rate": 150.55222,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_livestock_ranch",
+      "state_id": 921,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_open_air_stockyards",
+        "pm_simple_ranch",
+        "pm_standard_fences",
+        "pm_unrefrigerated"
+      ],
+      "id": 3191,
+      "profit": 2197.85053,
+      "salary_rate": 135.13792,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 921,
+      "levels": 150,
+      "staffing": 150.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3192,
+      "profit": 12486.36583,
+      "salary_rate": 150.15324,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 922,
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 1.03,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3193,
+      "profit": -1826.49812,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 922,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.2,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3194,
+      "profit": 4184.87327,
+      "salary_rate": 102.96754,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 922,
+      "levels": 238,
+      "staffing": 238.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3195,
+      "profit": 23296.1558,
+      "salary_rate": 102.96754,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_livestock_ranch",
+      "state_id": 923,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "pm_open_air_stockyards",
+        "pm_simple_ranch",
+        "pm_standard_fences",
+        "pm_unrefrigerated"
+      ],
+      "id": 3196,
+      "profit": 1539.54236,
+      "salary_rate": 110.87297,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 923,
+      "levels": 59,
+      "staffing": 59.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3197,
+      "profit": 4760.99103,
+      "salary_rate": 110.87297,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 924,
+      "levels": 9,
+      "staffing": 9.0,
+      "throughput": 1.09,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3198,
+      "profit": -4443.57911,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_paper_mill",
+      "state_id": 924,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_pulp_pressing",
+        "pm_automation_disabled"
+      ],
+      "id": 3199,
+      "profit": 1761.55764,
+      "salary_rate": 107.18561,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 924,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.25,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3200,
+      "profit": 9175.36665,
+      "salary_rate": 181.51975,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 924,
+      "levels": 495,
+      "staffing": 495.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3201,
+      "profit": 57646.09923,
+      "salary_rate": 119.09512,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_silk_plantation",
+      "state_id": 924,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.5,
+      "production_methods": [
+        "default_building_silk_plantation",
+        "pm_road_carts"
+      ],
+      "id": 3202,
+      "profit": 5313.49127,
+      "salary_rate": 119.09512,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 925,
+      "levels": 9,
+      "staffing": 9.0,
+      "throughput": 1.09,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3203,
+      "profit": -5583.40399,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_trade_center",
+      "state_id": 925,
+      "levels": 45,
+      "staffing": 45.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_trade_center",
+        "pm_trade_center_trade_quantity_normal"
+      ],
+      "id": 3204,
+      "profit": -6294.30734,
+      "salary_rate": 125.40615,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_banana_plantation",
+      "state_id": 925,
+      "levels": 7,
+      "staffing": 7.0,
+      "throughput": 1.07,
+      "production_methods": [
+        "default_building_banana_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3205,
+      "profit": 7167.21749,
+      "salary_rate": 212.37637,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 925,
+      "levels": 314,
+      "staffing": 314.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3206,
+      "profit": 72773.36598,
+      "salary_rate": 139.34016,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 925,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3207,
+      "profit": 10790.45719,
+      "salary_rate": 323.6951,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_fishing_wharf",
+      "state_id": 925,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "pm_simple_fishing",
+        "pm_unrefrigerated"
+      ],
+      "id": 3208,
+      "profit": 1616.81921,
+      "salary_rate": 125.40615,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_silk_plantation",
+      "state_id": 925,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.45,
+      "production_methods": [
+        "default_building_silk_plantation",
+        "pm_road_carts"
+      ],
+      "id": 3209,
+      "profit": 14193.05952,
+      "salary_rate": 262.19304,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_rice_farm",
+      "state_id": 925,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "pm_simple_farming_building_rice_farm",
+        "pm_tools_disabled",
+        "pm_fig_orchards_building_rice_farm"
+      ],
+      "id": 3210,
+      "profit": 4697.67262,
+      "salary_rate": 235.97374,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_dye_plantation",
+      "state_id": 925,
+      "levels": 12,
+      "staffing": 12.0,
+      "throughput": 1.12,
+      "production_methods": [
+        "default_building_dye_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3211,
+      "profit": 2444.00956,
+      "salary_rate": 191.13874,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_shipyard",
+      "state_id": 925,
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 1.13,
+      "production_methods": [
+        "pm_basic_shipbuilding"
+      ],
+      "id": 3212,
+      "profit": 2892.45447,
+      "salary_rate": 435.14318,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_port",
+      "state_id": 925,
+      "levels": 15,
+      "staffing": 15.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "pm_basic_port"
+      ],
+      "id": 3213,
+      "profit": 2082.04875,
+      "salary_rate": 154.82239,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_naval_fortification",
+      "state_id": 925,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_naval_fortification_basic"
+      ],
+      "id": 3214,
+      "profit": -599.83306,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 927,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3221,
+      "profit": -5027.74385,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_silk_plantation",
+      "state_id": 927,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.35,
+      "production_methods": [
+        "default_building_silk_plantation",
+        "pm_road_carts"
+      ],
+      "id": 3222,
+      "profit": 4326.18641,
+      "salary_rate": 137.64975,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 927,
+      "levels": 400,
+      "staffing": 400.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3223,
+      "profit": 51174.43018,
+      "salary_rate": 137.64975,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 927,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3224,
+      "profit": 6502.1934,
+      "salary_rate": 209.79993,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_rice_farm",
+      "state_id": 927,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "pm_simple_farming_building_rice_farm",
+        "pm_tools_disabled",
+        "pm_fig_orchards_building_rice_farm"
+      ],
+      "id": 3225,
+      "profit": 3732.72914,
+      "salary_rate": 188.81994,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_dye_plantation",
+      "state_id": 927,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "default_building_dye_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3226,
+      "profit": 2143.74215,
+      "salary_rate": 137.64975,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_fishing_wharf",
+      "state_id": 927,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_simple_fishing",
+        "pm_unrefrigerated"
+      ],
+      "id": 3227,
+      "profit": 859.41614,
+      "salary_rate": 123.88478,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_naval_administration",
+      "state_id": 927,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_simple_sailor_recruitment"
+      ],
+      "id": 3228,
+      "profit": -336.03588,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 928,
+      "levels": 7,
+      "staffing": 7.0,
+      "throughput": 1.07,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3229,
+      "profit": -4371.78649,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_textile_mill",
+      "state_id": 928,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "pm_handsewn_clothes",
+        "pm_traditional_looms",
+        "pm_craftsman_sewing"
+      ],
+      "id": 3230,
+      "profit": 5530.49858,
+      "salary_rate": 151.00944,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 928,
+      "levels": 15,
+      "staffing": 15.0,
+      "throughput": 1.15,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3231,
+      "profit": 9798.07508,
+      "salary_rate": 137.28132,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 928,
+      "levels": 228,
+      "staffing": 228.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3232,
+      "profit": 34838.39254,
+      "salary_rate": 137.28132,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_rice_farm",
+      "state_id": 928,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_simple_farming_building_rice_farm",
+        "pm_tools_disabled",
+        "pm_fig_orchards_building_rice_farm"
+      ],
+      "id": 3233,
+      "profit": 2663.5,
+      "salary_rate": 232.48709,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_fishing_wharf",
+      "state_id": 928,
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 1.03,
+      "production_methods": [
+        "pm_simple_fishing",
+        "pm_unrefrigerated"
+      ],
+      "id": 3234,
+      "profit": 636.73973,
+      "salary_rate": 123.55319,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_naval_fortification",
+      "state_id": 928,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_naval_fortification_basic"
+      ],
+      "id": 3235,
+      "profit": -627.46201,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 930,
+      "levels": 9,
+      "staffing": 9.0,
+      "throughput": 1.09,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3236,
+      "profit": -5691.55532,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_glassworks",
+      "state_id": 930,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "pm_forest_glass",
+        "pm_manual_glassblowing",
+        "pm_ceramics"
+      ],
+      "id": 3237,
+      "profit": -930.7272,
+      "salary_rate": 120.90189,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 930,
+      "levels": 15,
+      "staffing": 15.0,
+      "throughput": 1.15,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3238,
+      "profit": 9835.19325,
+      "salary_rate": 134.33543,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 930,
+      "levels": 267,
+      "staffing": 267.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3239,
+      "profit": 38605.13529,
+      "salary_rate": 134.33543,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_rice_farm",
+      "state_id": 930,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "pm_simple_farming_building_rice_farm",
+        "pm_tools_disabled",
+        "pm_fig_orchards_building_rice_farm"
+      ],
+      "id": 3240,
+      "profit": 4915.95106,
+      "salary_rate": 184.27355,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 929,
+      "levels": 13,
+      "staffing": 13.0,
+      "throughput": 1.13,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3241,
+      "profit": -8263.3909,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_construction_sector",
+      "state_id": 929,
+      "levels": 2,
+      "staffing": 2.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_wooden_buildings"
+      ],
+      "id": 3242,
+      "profit": -122.60767,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_glassworks",
+      "state_id": 929,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "pm_forest_glass",
+        "pm_manual_glassblowing",
+        "pm_ceramics"
+      ],
+      "id": 3243,
+      "profit": -1950.52136,
+      "salary_rate": 117.5519,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 929,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3244,
+      "profit": 6637.34496,
+      "salary_rate": 130.61322,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 929,
+      "levels": 265,
+      "staffing": 265.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3245,
+      "profit": 33727.85996,
+      "salary_rate": 130.61322,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_rice_farm",
+      "state_id": 929,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "pm_simple_farming_building_rice_farm",
+        "pm_tools_disabled",
+        "pm_fig_orchards_building_rice_farm"
+      ],
+      "id": 3246,
+      "profit": 3393.5595,
+      "salary_rate": 179.16763,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 931,
+      "levels": 12,
+      "staffing": 12.0,
+      "throughput": 1.12,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3247,
+      "profit": -7581.94375,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_construction_sector",
+      "state_id": 931,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_wooden_buildings"
+      ],
+      "id": 3248,
+      "profit": -61.30383,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_glassworks",
+      "state_id": 931,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_forest_glass",
+        "pm_manual_glassblowing",
+        "pm_ceramics"
+      ],
+      "id": 3249,
+      "profit": -96.83546,
+      "salary_rate": 121.02486,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 931,
+      "levels": 12,
+      "staffing": 12.0,
+      "throughput": 1.12,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3250,
+      "profit": 8804.00851,
+      "salary_rate": 134.47206,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 931,
+      "levels": 500,
+      "staffing": 500.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3251,
+      "profit": 45188.96965,
+      "salary_rate": 134.47206,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 932,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3252,
+      "profit": -4509.45031,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_iron_mine",
+      "state_id": 932,
+      "levels": 2,
+      "staffing": 2.0,
+      "throughput": 1.02,
+      "production_methods": [
+        "pm_picks_and_shovels_building_iron_mine",
+        "pm_no_explosives",
+        "pm_no_steam_automation",
+        "pm_road_carts"
+      ],
+      "id": 3253,
+      "profit": 419.83738,
+      "salary_rate": 116.55406,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_paper_mill",
+      "state_id": 932,
+      "levels": 11,
+      "staffing": 11.0,
+      "throughput": 1.11,
+      "production_methods": [
+        "pm_pulp_pressing",
+        "pm_automation_disabled"
+      ],
+      "id": 3254,
+      "profit": 668.87721,
+      "salary_rate": 116.55406,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_glassworks",
+      "state_id": 932,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_forest_glass",
+        "pm_manual_glassblowing",
+        "pm_ceramics"
+      ],
+      "id": 3255,
+      "profit": -1141.69046,
+      "salary_rate": 116.55406,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_wheat_farm",
+      "state_id": 932,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_simple_farming",
+        "pm_tools_disabled",
+        "pm_citrus_orchards"
+      ],
+      "id": 3256,
+      "profit": 1559.22174,
+      "salary_rate": 197.3853,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 932,
+      "levels": 195,
+      "staffing": 195.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3257,
+      "profit": 18351.66901,
+      "salary_rate": 129.50451,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 933,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3258,
+      "profit": -4932.49131,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_glassworks",
+      "state_id": 933,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "pm_forest_glass",
+        "pm_manual_glassblowing",
+        "pm_ceramics"
+      ],
+      "id": 3259,
+      "profit": 814.70458,
+      "salary_rate": 113.56634,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_rice_farm",
+      "state_id": 933,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "pm_simple_farming_building_rice_farm",
+        "pm_tools_disabled",
+        "pm_fig_orchards_building_rice_farm"
+      ],
+      "id": 3260,
+      "profit": 3701.35466,
+      "salary_rate": 173.09302,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 933,
+      "levels": 599,
+      "staffing": 599.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3261,
+      "profit": 68905.0632,
+      "salary_rate": 126.18482,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_silk_plantation",
+      "state_id": 933,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.35,
+      "production_methods": [
+        "default_building_silk_plantation",
+        "pm_road_carts"
+      ],
+      "id": 3262,
+      "profit": 4662.44709,
+      "salary_rate": 126.18482,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 933,
+      "levels": 17,
+      "staffing": 17.0,
+      "throughput": 1.17,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3263,
+      "profit": 12672.35998,
+      "salary_rate": 126.18482,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 934,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3264,
+      "profit": -3571.69131,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_furniture_manufactory",
+      "state_id": 934,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "pm_handcrafted_furniture",
+        "pm_automation_disabled",
+        "pm_luxury_furniture"
+      ],
+      "id": 3265,
+      "profit": 955.29552,
+      "salary_rate": 143.47933,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_rice_farm",
+      "state_id": 934,
+      "levels": 12,
+      "staffing": 12.0,
+      "throughput": 1.12,
+      "production_methods": [
+        "pm_simple_farming_building_rice_farm",
+        "pm_tools_disabled",
+        "pm_fig_orchards_building_rice_farm"
+      ],
+      "id": 3266,
+      "profit": 7722.93252,
+      "salary_rate": 178.9242,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 934,
+      "levels": 550,
+      "staffing": 550.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3267,
+      "profit": 60254.8856,
+      "salary_rate": 130.43575,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_paper_mill",
+      "state_id": 934,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_pulp_pressing",
+        "pm_automation_disabled"
+      ],
+      "id": 3268,
+      "profit": 735.11031,
+      "salary_rate": 117.39218,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 934,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3269,
+      "profit": 9023.74751,
+      "salary_rate": 161.03178,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 935,
+      "levels": 7,
+      "staffing": 7.0,
+      "throughput": 1.07,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3270,
+      "profit": -4371.78649,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_rice_farm",
+      "state_id": 935,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_simple_farming_building_rice_farm",
+        "pm_tools_disabled",
+        "pm_fig_orchards_building_rice_farm"
+      ],
+      "id": 3271,
+      "profit": 3669.54818,
+      "salary_rate": 181.302,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 935,
+      "levels": 264,
+      "staffing": 264.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3272,
+      "profit": 35686.84137,
+      "salary_rate": 132.16916,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 935,
+      "levels": 15,
+      "staffing": 15.0,
+      "throughput": 1.15,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3273,
+      "profit": 9862.48832,
+      "salary_rate": 132.16916,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 936,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3274,
+      "profit": -2651.86677,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_paper_mill",
+      "state_id": 936,
+      "levels": 9,
+      "staffing": 9.0,
+      "throughput": 1.09,
+      "production_methods": [
+        "pm_pulp_pressing",
+        "pm_automation_disabled"
+      ],
+      "id": 3275,
+      "profit": 498.19552,
+      "salary_rate": 121.36881,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_furniture_manufactory",
+      "state_id": 936,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "pm_handcrafted_furniture",
+        "pm_automation_disabled",
+        "pm_luxury_furniture"
+      ],
+      "id": 3276,
+      "profit": 235.5638,
+      "salary_rate": 148.33966,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_rice_farm",
+      "state_id": 936,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_simple_farming_building_rice_farm",
+        "pm_tools_disabled",
+        "pm_fig_orchards_building_rice_farm"
+      ],
+      "id": 3277,
+      "profit": 4065.75744,
+      "salary_rate": 184.98522,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 936,
+      "levels": 311,
+      "staffing": 311.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3278,
+      "profit": 38611.90707,
+      "salary_rate": 134.85423,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 936,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3279,
+      "profit": 6994.26975,
+      "salary_rate": 166.4867,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 937,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3280,
+      "profit": -2651.86677,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_furniture_manufactory",
+      "state_id": 937,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "pm_handcrafted_furniture",
+        "pm_automation_disabled",
+        "pm_luxury_furniture"
+      ],
+      "id": 3281,
+      "profit": 179.8928,
+      "salary_rate": 154.45492,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_rice_farm",
+      "state_id": 937,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_simple_farming_building_rice_farm",
+        "pm_tools_disabled",
+        "pm_fig_orchards_building_rice_farm"
+      ],
+      "id": 3282,
+      "profit": 2973.03245,
+      "salary_rate": 192.61119,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 937,
+      "levels": 320,
+      "staffing": 320.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3283,
+      "profit": 39704.13579,
+      "salary_rate": 140.41358,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_paper_mill",
+      "state_id": 937,
+      "levels": 9,
+      "staffing": 9.0,
+      "throughput": 1.09,
+      "production_methods": [
+        "pm_pulp_pressing",
+        "pm_automation_disabled"
+      ],
+      "id": 3284,
+      "profit": 469.82613,
+      "salary_rate": 126.37223,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 937,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3285,
+      "profit": 4978.17835,
+      "salary_rate": 214.01243,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_silk_plantation",
+      "state_id": 937,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.35,
+      "production_methods": [
+        "default_building_silk_plantation",
+        "pm_road_carts"
+      ],
+      "id": 3286,
+      "profit": 4572.80594,
+      "salary_rate": 140.41358,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 938,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3287,
+      "profit": -2405.17671,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_logging_camp",
+      "state_id": 938,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "pm_road_carts",
+        "pm_saw_mills",
+        "pm_no_equipment",
+        "pm_hardwood"
+      ],
+      "id": 3288,
+      "profit": 5692.42113,
+      "salary_rate": 155.47123,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_rice_farm",
+      "state_id": 938,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_simple_farming_building_rice_farm",
+        "pm_tools_disabled",
+        "pm_fig_orchards_building_rice_farm"
+      ],
+      "id": 3289,
+      "profit": 3827.68234,
+      "salary_rate": 174.49072,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 938,
+      "levels": 324,
+      "staffing": 324.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3290,
+      "profit": 37778.60859,
+      "salary_rate": 127.20375,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 938,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3291,
+      "profit": 6742.4759,
+      "salary_rate": 127.20375,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_fishing_wharf",
+      "state_id": 939,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "pm_simple_fishing",
+        "pm_unrefrigerated"
+      ],
+      "id": 3292,
+      "profit": 1072.42821,
+      "salary_rate": 128.93994,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 939,
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 1.03,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3293,
+      "profit": 1890.94601,
+      "salary_rate": 143.26659,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 939,
+      "levels": 71,
+      "staffing": 71.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3294,
+      "profit": 13510.16503,
+      "salary_rate": 143.26659,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_banana_plantation",
+      "state_id": 939,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "default_building_banana_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3295,
+      "profit": 4208.83519,
+      "salary_rate": 143.26659,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_port",
+      "state_id": 939,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_basic_port"
+      ],
+      "id": 3296,
+      "profit": null,
+      "salary_rate": 159.18509,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 23,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3297,
+      "profit": -3653.56677,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_glassworks",
+      "state_id": 23,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "pm_forest_glass",
+        "pm_manual_glassblowing",
+        "pm_ceramics"
+      ],
+      "id": 3298,
+      "profit": -2009.3148,
+      "salary_rate": 125.84727,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_textile_mill",
+      "state_id": 23,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "pm_handsewn_clothes",
+        "pm_traditional_looms",
+        "pm_craftsman_sewing"
+      ],
+      "id": 3299,
+      "profit": 7700.11533,
+      "salary_rate": 153.81333,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 23,
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 1.03,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3300,
+      "profit": 3257.86916,
+      "salary_rate": 213.12345,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 23,
+      "levels": 347,
+      "staffing": 347.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3301,
+      "profit": 34958.46569,
+      "salary_rate": 139.8303,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_wheat_farm",
+      "state_id": 23,
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 1.03,
+      "production_methods": [
+        "pm_simple_farming",
+        "pm_tools_disabled",
+        "pm_citrus_orchards"
+      ],
+      "id": 3302,
+      "profit": 1313.15164,
+      "salary_rate": 125.84727,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_fishing_wharf",
+      "state_id": 23,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_simple_fishing",
+        "pm_unrefrigerated"
+      ],
+      "id": 3303,
+      "profit": 1398.51937,
+      "salary_rate": 125.84727,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_port",
+      "state_id": 23,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_basic_port"
+      ],
+      "id": 3304,
+      "profit": null,
+      "salary_rate": 155.367,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_government_administration",
+      "state_id": 24,
+      "levels": 12,
+      "staffing": 12.0,
+      "throughput": 1.12,
+      "production_methods": [
+        "pm_religious_bureaucrats",
+        "pm_professional_bureaucrats",
+        "pm_horizontal_drawer_cabinets"
+      ],
+      "id": 3305,
+      "profit": -5619.37447,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_paper_mill",
+      "state_id": 24,
+      "levels": 7,
+      "staffing": 7.0,
+      "throughput": 1.07,
+      "production_methods": [
+        "pm_pulp_pressing",
+        "pm_automation_disabled"
+      ],
+      "id": 3306,
+      "profit": 1241.0143,
+      "salary_rate": 133.13791,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_tea_plantation",
+      "state_id": 24,
+      "levels": 12,
+      "staffing": 12.0,
+      "throughput": 1.12,
+      "production_methods": [
+        "default_building_tea_plantation",
+        "default_labour",
+        "pm_road_carts"
+      ],
+      "id": 3307,
+      "profit": 8679.98131,
+      "salary_rate": 147.93101,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 24,
+      "levels": 400,
+      "staffing": 400.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3308,
+      "profit": 42050.41739,
+      "salary_rate": 147.93101,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_fishing_wharf",
+      "state_id": 24,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_simple_fishing",
+        "pm_unrefrigerated"
+      ],
+      "id": 3309,
+      "profit": 944.6992,
+      "salary_rate": 133.13791,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_port",
+      "state_id": 24,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "pm_basic_port"
+      ],
+      "id": 3310,
+      "profit": null,
+      "salary_rate": 164.36778,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_naval_fortification",
+      "state_id": 24,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_naval_fortification_basic"
+      ],
+      "id": 3311,
+      "profit": -572.20416,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_livestock_ranch",
+      "state_id": 217,
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 1.13,
+      "production_methods": [
+        "pm_open_air_stockyards",
+        "pm_simple_ranch",
+        "pm_standard_fences",
+        "pm_unrefrigerated"
+      ],
+      "id": 3312,
+      "profit": 907.06506,
+      "salary_rate": 127.24506,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 217,
+      "levels": 14,
+      "staffing": 14.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3313,
+      "profit": 1779.05427,
+      "salary_rate": 127.24506,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_livestock_ranch",
+      "state_id": 216,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.15,
+      "production_methods": [
+        "pm_open_air_stockyards",
+        "pm_simple_ranch",
+        "pm_standard_fences",
+        "pm_unrefrigerated"
+      ],
+      "id": 3314,
+      "profit": 1529.16596,
+      "salary_rate": 133.17022,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 216,
+      "levels": 17,
+      "staffing": 17.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 3315,
+      "profit": 2616.65185,
+      "salary_rate": 133.17022,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_wheat_farm",
+      "state_id": 216,
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 0.93,
+      "production_methods": [
+        "pm_simple_farming",
+        "pm_no_secondary",
+        "pm_tools_disabled"
+      ],
+      "id": 3316,
+      "profit": 322.29403,
+      "salary_rate": 133.17022,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 23,
+      "levels": 344,
+      "staffing": 344.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 4015,
+      "profit": 33229.0116,
+      "salary_rate": 62.92366,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 23,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 4016,
+      "profit": 1044.9008,
+      "salary_rate": 139.8303,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 24,
+      "levels": 388,
+      "staffing": 388.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 4017,
+      "profit": 35234.3668,
+      "salary_rate": 66.56897,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 24,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 4018,
+      "profit": 546.45003,
+      "salary_rate": 147.93101,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_pasture",
+      "state_id": 216,
+      "levels": 32,
+      "staffing": 8.5392,
+      "throughput": 1.1,
+      "production_methods": [
+        "default_building_subsistence_pasture",
+        "pm_home_workshops_building_subsistence_pasture",
+        "pm_serfdom_building_subsistence_pasture"
+      ],
+      "id": 4351,
+      "profit": 822.92115,
+      "salary_rate": 66.58513,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_pasture",
+      "state_id": 217,
+      "levels": 27,
+      "staffing": 10.76058,
+      "throughput": 1.1,
+      "production_methods": [
+        "default_building_subsistence_pasture",
+        "pm_home_workshops_building_subsistence_pasture",
+        "pm_serfdom_building_subsistence_pasture"
+      ],
+      "id": 4352,
+      "profit": 917.41569,
+      "salary_rate": 63.62253,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_pasture",
+      "state_id": 905,
+      "levels": 28,
+      "staffing": 9.64964,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_pasture",
+        "pm_home_workshops_building_subsistence_pasture",
+        "pm_serfdom_building_subsistence_pasture"
+      ],
+      "id": 5476,
+      "profit": 701.13324,
+      "salary_rate": 62.22262,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_pasture",
+      "state_id": 906,
+      "levels": 38,
+      "staffing": 15.9695,
+      "throughput": 0.9,
+      "production_methods": [
+        "default_building_subsistence_pasture",
+        "pm_home_workshops_building_subsistence_pasture",
+        "pm_serfdom_building_subsistence_pasture"
+      ],
+      "id": 5477,
+      "profit": 1000.66321,
+      "salary_rate": 63.90277,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 907,
+      "levels": 324,
+      "staffing": 324.0,
+      "throughput": 1.15,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5478,
+      "profit": 32539.69937,
+      "salary_rate": 58.09377,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 907,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5479,
+      "profit": 1314.39385,
+      "salary_rate": 129.09724,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 908,
+      "levels": 130,
+      "staffing": 130.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5480,
+      "profit": 16195.05927,
+      "salary_rate": 64.38944,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 908,
+      "levels": 2,
+      "staffing": 2.0,
+      "throughput": 1.02,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5481,
+      "profit": 1227.0346,
+      "salary_rate": 157.39635,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 909,
+      "levels": 93,
+      "staffing": 87.048,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5482,
+      "profit": 12323.30173,
+      "salary_rate": 64.37454,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 909,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5483,
+      "profit": 2771.41721,
+      "salary_rate": 174.84437,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 910,
+      "levels": 171,
+      "staffing": 171.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5484,
+      "profit": 20771.3597,
+      "salary_rate": 69.00909,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 910,
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 1.03,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5485,
+      "profit": 1223.12659,
+      "salary_rate": 153.35348,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_pasture",
+      "state_id": 911,
+      "levels": 7,
+      "staffing": 7.0,
+      "throughput": 0.9,
+      "production_methods": [
+        "default_building_subsistence_pasture",
+        "pm_home_workshops_building_subsistence_pasture",
+        "pm_serfdom_building_subsistence_pasture"
+      ],
+      "id": 5486,
+      "profit": null,
+      "salary_rate": 194.94587,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_pasture",
+      "state_id": 912,
+      "levels": 101,
+      "staffing": 101.0,
+      "throughput": 1.1,
+      "production_methods": [
+        "default_building_subsistence_pasture",
+        "pm_home_workshops_building_subsistence_pasture",
+        "pm_serfdom_building_subsistence_pasture"
+      ],
+      "id": 5487,
+      "profit": 6918.44437,
+      "salary_rate": 39.27739,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 913,
+      "levels": 351,
+      "staffing": 330.30153,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5488,
+      "profit": 35104.64538,
+      "salary_rate": 61.84389,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 913,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5489,
+      "profit": 1805.06631,
+      "salary_rate": 123.68774,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 914,
+      "levels": 337,
+      "staffing": 337.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5490,
+      "profit": 29252.52345,
+      "salary_rate": 62.4979,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 914,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5491,
+      "profit": 672.77557,
+      "salary_rate": 138.88418,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 915,
+      "levels": 75,
+      "staffing": 53.5395,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5492,
+      "profit": 4046.56517,
+      "salary_rate": 22.31378,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 915,
+      "levels": 54,
+      "staffing": 54.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 5493,
+      "profit": 3919.41505,
+      "salary_rate": 74.75022,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_farm",
+      "state_id": 916,
+      "levels": 25,
+      "staffing": 2.71,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_farm",
+        "pm_home_workshops_building_subsistence_farm",
+        "pm_serfdom"
+      ],
+      "id": 5494,
+      "profit": 233.24353,
+      "salary_rate": 48.01873,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 916,
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 5495,
+      "profit": 224.4401,
+      "salary_rate": 106.70826,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 917,
+      "levels": 197,
+      "staffing": 197.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5496,
+      "profit": 19059.37719,
+      "salary_rate": 63.99404,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 917,
+      "levels": 2,
+      "staffing": 2.0,
+      "throughput": 1.02,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5497,
+      "profit": 543.0261,
+      "salary_rate": 142.20891,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_farm",
+      "state_id": 918,
+      "levels": 138,
+      "staffing": 138.0,
+      "throughput": 0.9,
+      "production_methods": [
+        "default_building_subsistence_farm",
+        "pm_home_workshops_building_subsistence_farm",
+        "pm_serfdom"
+      ],
+      "id": 5498,
+      "profit": 7808.07896,
+      "salary_rate": 55.21545,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 919,
+      "levels": 368,
+      "staffing": 359.52864,
+      "throughput": 1.15,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5499,
+      "profit": 30866.50599,
+      "salary_rate": 41.62944,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 919,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.01,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5500,
+      "profit": 143.70341,
+      "salary_rate": 92.50981,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 920,
+      "levels": 197,
+      "staffing": 197.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5501,
+      "profit": 16251.00473,
+      "salary_rate": 67.74853,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 921,
+      "levels": 144,
+      "staffing": 144.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5502,
+      "profit": 10997.98935,
+      "salary_rate": 67.56898,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 922,
+      "levels": 245,
+      "staffing": 232.8676,
+      "throughput": 1.15,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5503,
+      "profit": 19883.16838,
+      "salary_rate": 46.33541,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_farm",
+      "state_id": 923,
+      "levels": 55,
+      "staffing": 53.59915,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_farm",
+        "pm_home_workshops_building_subsistence_farm",
+        "pm_serfdom"
+      ],
+      "id": 5504,
+      "profit": 3389.92013,
+      "salary_rate": 55.4365,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 924,
+      "levels": 480,
+      "staffing": 475.4496,
+      "throughput": 1.15,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5505,
+      "profit": 45014.23192,
+      "salary_rate": 53.59283,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 924,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5506,
+      "profit": 939.86997,
+      "salary_rate": 119.09512,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 925,
+      "levels": 260,
+      "staffing": 256.7032,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5507,
+      "profit": 34859.16311,
+      "salary_rate": 62.70309,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 925,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 1.08,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5508,
+      "profit": 4182.25279,
+      "salary_rate": 153.27415,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 927,
+      "levels": 367,
+      "staffing": 367.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5510,
+      "profit": 36203.96592,
+      "salary_rate": 61.94241,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 927,
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 1.03,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5511,
+      "profit": 979.6783,
+      "salary_rate": 137.64975,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 928,
+      "levels": 231,
+      "staffing": 208.83324,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5512,
+      "profit": 23362.77188,
+      "salary_rate": 61.77662,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 928,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5513,
+      "profit": 1665.53758,
+      "salary_rate": 123.55319,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 929,
+      "levels": 345,
+      "staffing": 250.40445,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5514,
+      "profit": 24787.24934,
+      "salary_rate": 58.77597,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 929,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5515,
+      "profit": 1554.33476,
+      "salary_rate": 117.5519,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 930,
+      "levels": 257,
+      "staffing": 243.83903,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5516,
+      "profit": 24983.8191,
+      "salary_rate": 60.45095,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 930,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5517,
+      "profit": 1455.67887,
+      "salary_rate": 120.90189,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 931,
+      "levels": 488,
+      "staffing": 488.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5518,
+      "profit": 38502.89604,
+      "salary_rate": 60.51244,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 931,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5519,
+      "profit": 660.87898,
+      "salary_rate": 134.47206,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 932,
+      "levels": 196,
+      "staffing": 191.45672,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5520,
+      "profit": 17587.92871,
+      "salary_rate": 58.27706,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 932,
+      "levels": 6,
+      "staffing": 5.99976,
+      "throughput": 1.05999,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5521,
+      "profit": 888.23589,
+      "salary_rate": 116.55406,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 933,
+      "levels": 568,
+      "staffing": 566.58568,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5522,
+      "profit": 50249.81972,
+      "salary_rate": 56.78319,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 933,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.04,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5523,
+      "profit": 1371.8559,
+      "salary_rate": 126.18482,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 934,
+      "levels": 528,
+      "staffing": 528.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5524,
+      "profit": 45768.00492,
+      "salary_rate": 58.69611,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 934,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5525,
+      "profit": 1608.6889,
+      "salary_rate": 130.43575,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 935,
+      "levels": 249,
+      "staffing": 242.51106,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5526,
+      "profit": 23253.92359,
+      "salary_rate": 59.47614,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 935,
+      "levels": 2,
+      "staffing": 2.0,
+      "throughput": 1.02,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5527,
+      "profit": 821.13803,
+      "salary_rate": 118.95225,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 936,
+      "levels": 304,
+      "staffing": 295.1384,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5528,
+      "profit": 28872.97933,
+      "salary_rate": 60.68443,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 936,
+      "levels": 6,
+      "staffing": 6.0,
+      "throughput": 1.06,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5529,
+      "profit": 1630.30738,
+      "salary_rate": 121.36881,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 937,
+      "levels": 300,
+      "staffing": 300.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5530,
+      "profit": 28595.48791,
+      "salary_rate": 63.18612,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 937,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.05,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5531,
+      "profit": 953.24632,
+      "salary_rate": 140.41358,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 938,
+      "levels": 316,
+      "staffing": 310.41312,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5532,
+      "profit": 28506.69181,
+      "salary_rate": 57.24171,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 938,
+      "levels": 2,
+      "staffing": 2.0,
+      "throughput": 1.02,
+      "production_methods": [
+        "pm_free_urban_clergy",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_market_squares"
+      ],
+      "id": 5533,
+      "profit": 789.40514,
+      "salary_rate": 114.48338,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_rice_farm",
+      "state_id": 939,
+      "levels": 72,
+      "staffing": 63.25704,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_rice_farm",
+        "pm_home_workshops_building_subsistence_rice_farm",
+        "pm_serfdom_building_subsistence_rice_farm"
+      ],
+      "id": 5534,
+      "profit": 7730.79955,
+      "salary_rate": 64.46999,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_pasture",
+      "state_id": 966,
+      "levels": 23,
+      "staffing": 3.29199,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_pasture",
+        "pm_home_workshops_building_subsistence_pasture",
+        "pm_serfdom_building_subsistence_pasture"
+      ],
+      "id": 5578,
+      "profit": 239.17328,
+      "salary_rate": 64.36557,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_pasture",
+      "state_id": 975,
+      "levels": 49,
+      "staffing": 4.50114,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_pasture",
+        "pm_home_workshops_building_subsistence_pasture",
+        "pm_serfdom_building_subsistence_pasture"
+      ],
+      "id": 5592,
+      "profit": 372.23128,
+      "salary_rate": 66.70137,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_farm",
+      "state_id": 984,
+      "levels": 15,
+      "staffing": 2.3898,
+      "throughput": 0.9,
+      "production_methods": [
+        "default_building_subsistence_farm",
+        "pm_home_workshops_building_subsistence_farm",
+        "pm_serfdom"
+      ],
+      "id": 5605,
+      "profit": 86.81733,
+      "salary_rate": 22.27897,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 984,
+      "levels": 2,
+      "staffing": 2.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 5606,
+      "profit": 84.29239,
+      "salary_rate": 49.5088,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_pasture",
+      "state_id": 1132,
+      "levels": 10,
+      "staffing": 1.4898,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_pasture",
+        "pm_home_workshops_building_subsistence_pasture",
+        "pm_serfdom_building_subsistence_pasture"
+      ],
+      "id": 5828,
+      "profit": 89.63882,
+      "salary_rate": 22.27838,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 1132,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 5829,
+      "profit": 87.63377,
+      "salary_rate": 44.55671,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_subsistence_pasture",
+      "state_id": 1135,
+      "levels": 30,
+      "staffing": 4.0104,
+      "throughput": 1.0,
+      "production_methods": [
+        "default_building_subsistence_pasture",
+        "pm_home_workshops_building_subsistence_pasture",
+        "pm_serfdom_building_subsistence_pasture"
+      ],
+      "id": 5834,
+      "profit": 229.59806,
+      "salary_rate": 22.27886,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_manor_house",
+      "state_id": 1135,
+      "levels": 4,
+      "staffing": 4.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_manor_house_privately_owned",
+        "pm_manor_house_clergy_ownership"
+      ],
+      "id": 5835,
+      "profit": 224.25115,
+      "salary_rate": 49.50853,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 914,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6206,
+      "profit": -1457.66919,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 919,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6207,
+      "profit": -728.83459,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 23,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6208,
+      "profit": -728.83459,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 911,
+      "levels": 2,
+      "staffing": 2.0,
+      "throughput": 0.9,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6209,
+      "profit": -120.59665,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 912,
+      "levels": 8,
+      "staffing": 8.0,
+      "throughput": 0.9,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6210,
+      "profit": -583.06767,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 920,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6211,
+      "profit": -364.41729,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 921,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6212,
+      "profit": -364.41729,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 922,
+      "levels": 15,
+      "staffing": 15.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6213,
+      "profit": -1093.25189,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 907,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6214,
+      "profit": -1457.66919,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 909,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6215,
+      "profit": -728.83459,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 24,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6216,
+      "profit": -1457.66919,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 908,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6217,
+      "profit": -1457.66919,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 938,
+      "levels": 25,
+      "staffing": 25.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6218,
+      "profit": -1822.08649,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 937,
+      "levels": 15,
+      "staffing": 15.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6219,
+      "profit": -1093.25189,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 939,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6220,
+      "profit": -364.41729,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 927,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6221,
+      "profit": -1457.66919,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 928,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6222,
+      "profit": -728.83459,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 930,
+      "levels": 25,
+      "staffing": 25.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6223,
+      "profit": -1822.08649,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 932,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6224,
+      "profit": -1457.66919,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 935,
+      "levels": 15,
+      "staffing": 15.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6225,
+      "profit": -1093.25189,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 910,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6226,
+      "profit": -1457.66919,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 913,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6227,
+      "profit": -1457.66919,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 924,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6228,
+      "profit": -1457.66919,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 925,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6229,
+      "profit": -1457.66919,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 929,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6230,
+      "profit": -1457.66919,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 933,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6231,
+      "profit": -1457.66919,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 934,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6232,
+      "profit": -1457.66919,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 936,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6233,
+      "profit": -1457.66919,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 923,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 0.9,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6234,
+      "profit": -596.49613,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 916,
+      "levels": 5,
+      "staffing": 5.0,
+      "throughput": 0.9,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6235,
+      "profit": -324.19678,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 917,
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6236,
+      "profit": -1457.66919,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_barrack",
+      "state_id": 918,
+      "levels": 10,
+      "staffing": 10.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_no_organization"
+      ],
+      "id": 6237,
+      "profit": -728.83459,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 920,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.01,
+      "production_methods": [
+        "pm_market_stalls",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_free_urban_clergy"
+      ],
+      "id": 6308,
+      "profit": 138.26149,
+      "salary_rate": 150.55222,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_urban_center",
+      "state_id": 922,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.01,
+      "production_methods": [
+        "pm_market_stalls",
+        "pm_no_street_lighting",
+        "pm_no_public_transport",
+        "pm_free_urban_clergy"
+      ],
+      "id": 6309,
+      "profit": 179.76638,
+      "salary_rate": 92.67079,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_naval_logistics_center",
+      "state_id": 925,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_basic_naval_logistics_center"
+      ],
+      "id": 6310,
+      "profit": -25.41682,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_army_logistics_center",
+      "state_id": 907,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_basic_army_logistics_center"
+      ],
+      "id": 6444,
+      "profit": -237.07285,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_army_logistics_center",
+      "state_id": 914,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_basic_army_logistics_center"
+      ],
+      "id": 6445,
+      "profit": -469.35155,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    },
+    {
+      "type": "building_army_logistics_center",
+      "state_id": 917,
+      "levels": 1,
+      "staffing": 1.0,
+      "throughput": 1.0,
+      "production_methods": [
+        "pm_basic_army_logistics_center"
+      ],
+      "id": 6446,
+      "profit": -129.80615,
+      "salary_rate": 432.47863,
+      "hiring_rate": 0.1,
+      "active": true
+    }
+  ],
+  "market": {
+    "id": 49,
+    "prices": {
+      "ammunition": 50.0,
+      "small_arms": 76.14022,
+      "artillery": 89.8688,
+      "tanks": 140.0,
+      "aeroplanes": 140.0,
+      "manowars": 122.5,
+      "ironclads": 140.0,
+      "grain": 19.85759,
+      "fish": 20.65864,
+      "fabric": 18.98331,
+      "wood": 24.89771,
+      "groceries": 47.17955,
+      "clothes": 31.57097,
+      "furniture": 31.7286,
+      "paper": 39.99966,
+      "merchant_marine": 48.78731,
+      "clippers": 40.14568,
+      "steamers": 122.5,
+      "silk": 35.66021,
+      "dye": 29.74205,
+      "sulfur": 45.7899,
+      "coal": 39.068,
+      "iron": 34.67603,
+      "lead": 31.59996,
+      "copper": 52.29896,
+      "hardwood": 46.41176,
+      "rubber": 70.0,
+      "oil": 61.91786,
+      "engines": 64.12533,
+      "steel": 64.99994,
+      "glass": 45.75464,
+      "fertilizer": 30.0,
+      "tools": 44.91463,
+      "explosives": 52.97706,
+      "porcelain": 85.42835,
+      "meat": 39.74982,
+      "fruit": 39.20193,
+      "liquor": 23.27997,
+      "wine": 29.90567,
+      "tea": 63.08585,
+      "coffee": 62.68005,
+      "sugar": 30.88682,
+      "tobacco": 43.39424,
+      "opium": 52.11677,
+      "automobiles": 175.0,
+      "telephones": 122.5,
+      "radios": 140.0,
+      "luxury_clothes": 65.147,
+      "luxury_furniture": 64.07799,
+      "fine_art": 350.0
+    },
+    "base_prices": {
+      "ammunition": 50.0,
+      "small_arms": 60.0,
+      "artillery": 70.0,
+      "tanks": 80.0,
+      "aeroplanes": 80.0,
+      "manowars": 70.0,
+      "ironclads": 80.0,
+      "grain": 20.0,
+      "fish": 20.0,
+      "fabric": 20.0,
+      "wood": 20.0,
+      "groceries": 30.0,
+      "clothes": 30.0,
+      "furniture": 30.0,
+      "paper": 30.0,
+      "services": 30.0,
+      "transportation": 30.0,
+      "electricity": 30.0,
+      "merchant_marine": 50.0,
+      "clippers": 60.0,
+      "steamers": 70.0,
+      "silk": 40.0,
+      "dye": 40.0,
+      "sulfur": 50.0,
+      "coal": 30.0,
+      "iron": 40.0,
+      "lead": 40.0,
+      "copper": 40.0,
+      "hardwood": 40.0,
+      "rubber": 40.0,
+      "oil": 40.0,
+      "engines": 60.0,
+      "steel": 50.0,
+      "glass": 40.0,
+      "fertilizer": 30.0,
+      "tools": 40.0,
+      "explosives": 50.0,
+      "porcelain": 70.0,
+      "meat": 30.0,
+      "fruit": 30.0,
+      "liquor": 30.0,
+      "wine": 50.0,
+      "tea": 50.0,
+      "coffee": 50.0,
+      "sugar": 30.0,
+      "tobacco": 40.0,
+      "opium": 50.0,
+      "automobiles": 100.0,
+      "telephones": 70.0,
+      "radios": 80.0,
+      "luxury_clothes": 60.0,
+      "luxury_furniture": 60.0,
+      "gold": 100.0,
+      "fine_art": 200.0
+    },
+    "supply": {},
+    "demand": {}
+  },
+  "laws": [
+    {
+      "name": "law_monarchy",
+      "group": "lawgroup_governance_principles",
+      "date": null
+    },
+    {
+      "name": "law_autocracy",
+      "group": "lawgroup_distribution_of_power",
+      "date": null
+    },
+    {
+      "name": "law_subjecthood",
+      "group": "lawgroup_citizenship",
+      "date": null
+    },
+    {
+      "name": "law_freedom_of_conscience",
+      "group": "lawgroup_church_and_state",
+      "date": null
+    },
+    {
+      "name": "law_appointed_bureaucrats",
+      "group": "lawgroup_bureaucracy",
+      "date": null
+    },
+    {
+      "name": "law_peasant_levies",
+      "group": "lawgroup_army_model",
+      "date": null
+    },
+    {
+      "name": "law_merchant_navy",
+      "group": "lawgroup_navy_model",
+      "date": null
+    },
+    {
+      "name": "law_no_home_affairs",
+      "group": "lawgroup_internal_security",
+      "date": null
+    },
+    {
+      "name": "law_traditionalism",
+      "group": "lawgroup_economic_system",
+      "date": null
+    },
+    {
+      "name": "law_canton_system",
+      "group": "lawgroup_trade_policy",
+      "date": null
+    },
+    {
+      "name": "law_land_based_taxation",
+      "group": "lawgroup_taxation",
+      "date": null
+    },
+    {
+      "name": "law_serfdom",
+      "group": "lawgroup_land_reform",
+      "date": null
+    },
+    {
+      "name": "law_no_colonial_affairs",
+      "group": "lawgroup_colonization",
+      "date": null
+    },
+    {
+      "name": "law_no_police",
+      "group": "lawgroup_policing",
+      "date": null
+    },
+    {
+      "name": "law_no_schools",
+      "group": "lawgroup_education_system",
+      "date": null
+    },
+    {
+      "name": "law_no_health_system",
+      "group": "lawgroup_health_system",
+      "date": null
+    },
+    {
+      "name": "law_censorship",
+      "group": "lawgroup_free_speech",
+      "date": null
+    },
+    {
+      "name": "law_no_workers_rights",
+      "group": "lawgroup_labor_rights",
+      "date": null
+    },
+    {
+      "name": "law_child_labor_allowed",
+      "group": "lawgroup_childrens_rights",
+      "date": null
+    },
+    {
+      "name": "law_no_womens_rights",
+      "group": "lawgroup_rights_of_women",
+      "date": null
+    },
+    {
+      "name": "law_no_social_security",
+      "group": "lawgroup_welfare",
+      "date": null
+    },
+    {
+      "name": "law_closed_borders",
+      "group": "lawgroup_migration",
+      "date": null
+    },
+    {
+      "name": "law_slavery_banned",
+      "group": "lawgroup_slavery",
+      "date": null
+    },
+    {
+      "name": "law_guild_system",
+      "group": "lawgroup_labour_associations",
+      "date": null
+    }
+  ],
+  "techs": [
+    "enclosure",
+    "manufacturies",
+    "steelworking",
+    "shaft_mining",
+    "distillation",
+    "prospecting",
+    "military_drill",
+    "standing_army",
+    "navigation",
+    "admiralty",
+    "gunsmithing",
+    "artillery",
+    "drydocks",
+    "urbanization",
+    "rationalism",
+    "tech_bureaucracy",
+    "centralization",
+    "democracy",
+    "international_relations",
+    "international_trade",
+    "urban_planning",
+    "sericulture",
+    "academia",
+    "law_enforcement"
+  ],
+  "decrees": [],
+  "institutions": [],
+  "companies": [],
+  "interest_groups": [
+    {
+      "name": "ig_armed_forces",
+      "clout": 0.15768,
+      "approval": -9,
+      "in_government": false,
+      "party": -1,
+      "political_strength": 24879444
+    },
+    {
+      "name": "ig_devout",
+      "clout": 0.13093,
+      "approval": 1,
+      "in_government": false,
+      "party": -1,
+      "political_strength": 20659009
+    },
+    {
+      "name": "ig_industrialists",
+      "clout": 0.00184,
+      "approval": -8,
+      "in_government": false,
+      "party": -1,
+      "political_strength": 290453
+    },
+    {
+      "name": "ig_intelligentsia",
+      "clout": 0.08005,
+      "approval": -8,
+      "in_government": false,
+      "party": -1,
+      "political_strength": 12630753
+    },
+    {
+      "name": "ig_landowners",
+      "clout": 0.50399,
+      "approval": 5,
+      "in_government": false,
+      "party": -1,
+      "political_strength": 79519546
+    },
+    {
+      "name": "ig_petty_bourgeoisie",
+      "clout": 0.03738,
+      "approval": -7,
+      "in_government": false,
+      "party": -1,
+      "political_strength": 5899042
+    },
+    {
+      "name": "ig_rural_folk",
+      "clout": 0.07915,
+      "approval": -2,
+      "in_government": false,
+      "party": -1,
+      "political_strength": 12488745
+    },
+    {
+      "name": "ig_trade_unions",
+      "clout": 0.00894,
+      "approval": -10,
+      "in_government": false,
+      "party": -1,
+      "political_strength": 1410720
+    }
+  ],
+  "movements": [
+    {
+      "type": "movement_royalist_absolutist",
+      "ideology": "ideology_absolutist_movement",
+      "radicalism": 0.0,
+      "pops": 949
+    },
+    {
+      "type": "movement_religious_majority",
+      "ideology": "ideology_traditionalist_movement",
+      "radicalism": 0.07656,
+      "pops": 701
+    },
+    {
+      "type": "movement_cultural_majority",
+      "ideology": "ideology_ethno_nationalist_movement",
+      "radicalism": 0.08152,
+      "pops": 677
+    }
+  ],
+  "timed_modifiers": [],
+  "tax": {
+    "level": 1,
+    "taxation_law": "law_land_based_taxation",
+    "rates": {
+      "tax_consumption_add": 0.2,
+      "tax_land_add": 0.55
+    },
+    "taxed_goods": [],
+    "import_tariffs": {
+      "small_arms": "low_tariffs",
+      "grain": "low_tariffs",
+      "fish": "low_tariffs",
+      "fabric": "low_tariffs",
+      "wood": "low_tariffs",
+      "clothes": "low_tariffs",
+      "furniture": "low_tariffs",
+      "paper": "low_tariffs",
+      "merchant_marine": "low_tariffs",
+      "clippers": "low_tariffs",
+      "silk": "low_tariffs",
+      "dye": "low_tariffs",
+      "iron": "low_tariffs",
+      "hardwood": "low_tariffs",
+      "glass": "low_tariffs",
+      "tools": "low_tariffs",
+      "porcelain": "low_tariffs",
+      "meat": "low_tariffs",
+      "fruit": "low_tariffs",
+      "liquor": "low_tariffs",
+      "tea": "low_tariffs",
+      "sugar": "low_tariffs",
+      "tobacco": "low_tariffs",
+      "opium": "no_tariffs_or_subventions",
+      "luxury_clothes": "low_tariffs",
+      "luxury_furniture": "low_tariffs"
+    },
+    "export_tariffs": {
+      "small_arms": "low_tariffs",
+      "artillery": "low_tariffs",
+      "grain": "low_tariffs",
+      "fabric": "low_tariffs",
+      "wood": "low_tariffs",
+      "paper": "low_tariffs",
+      "merchant_marine": "low_tariffs",
+      "clippers": "low_tariffs",
+      "silk": "low_tariffs",
+      "dye": "low_tariffs",
+      "iron": "low_tariffs",
+      "copper": "low_tariffs",
+      "hardwood": "low_tariffs",
+      "glass": "low_tariffs",
+      "tools": "low_tariffs"
+    }
+  },
+  "pops": null,
+  "diagnostics": {
+    "timings": {
+      "load": 0.584
+    },
+    "warnings": [
+      "存档只保存世界市场价格趋势；country.market 的实时价需 live 模式"
+    ],
+    "sections": {}
+  },
+  "schema": 1
+}

@@ -1,0 +1,749 @@
+{
+  "weekly": 1644692.9719495547,
+  "annual": 85524034.54137684,
+  "output_weekly": 1836477.7193798472,
+  "input_weekly": 191784.74743029237,
+  "per_capita": 0.23324835781246053,
+  "population": 366665109,
+  "price_basis": "market",
+  "scale": "staffing",
+  "building_filter": "producers",
+  "goods": [
+    {
+      "good": "grain",
+      "output_qty": 26892.555001474,
+      "input_qty": 0.0,
+      "output_value": 272530.49701268756,
+      "input_value": 0.0,
+      "net_qty": 26892.555001474,
+      "net_value": 272530.49701268756
+    },
+    {
+      "good": "tea",
+      "output_qty": 4459.5241000000005,
+      "input_qty": 0.0,
+      "output_value": 210828.4613516,
+      "input_value": 0.0,
+      "net_qty": 4459.5241000000005,
+      "net_value": 210828.4613516
+    },
+    {
+      "good": "services",
+      "output_qty": 10639.807795479997,
+      "input_qty": 0.0,
+      "output_value": 168214.6164599931,
+      "input_value": 0.0,
+      "net_qty": 10639.807795479997,
+      "net_value": 168214.6164599931
+    },
+    {
+      "good": "clothes",
+      "output_qty": 4495.482626000001,
+      "input_qty": 0.0,
+      "output_value": 144490.74563670636,
+      "input_value": 0.0,
+      "net_qty": 4495.482626000001,
+      "net_value": 144490.74563670636
+    },
+    {
+      "good": "furniture",
+      "output_qty": 5103.820005638001,
+      "input_qty": 0.0,
+      "output_value": 116642.70240885086,
+      "input_value": 0.0,
+      "net_qty": 5103.820005638001,
+      "net_value": 116642.70240885086
+    },
+    {
+      "good": "liquor",
+      "output_qty": 4236.282626,
+      "input_qty": 0.0,
+      "output_value": 109926.7895081589,
+      "input_value": 0.0,
+      "net_qty": 4236.282626,
+      "net_value": 109926.7895081589
+    },
+    {
+      "good": "fruit",
+      "output_qty": 2123.4788140000005,
+      "input_qty": 0.0,
+      "output_value": 95491.24965646952,
+      "input_value": 0.0,
+      "net_qty": 2123.4788140000005,
+      "net_value": 95491.24965646952
+    },
+    {
+      "good": "wood",
+      "output_qty": 8721.088726124999,
+      "input_qty": 4531.754152162501,
+      "output_value": 189427.71583910694,
+      "input_value": 98432.64582516838,
+      "net_qty": 4189.334573962498,
+      "net_value": 90995.07001393856
+    },
+    {
+      "good": "luxury_furniture",
+      "output_qty": 1084.4217245475002,
+      "input_qty": 0.0,
+      "output_value": 78731.45715102872,
+      "input_value": 0.0,
+      "net_qty": 1084.4217245475002,
+      "net_value": 78731.45715102872
+    },
+    {
+      "good": "paper",
+      "output_qty": 2531.17456,
+      "input_qty": 0.0,
+      "output_value": 77075.9612389552,
+      "input_value": 0.0,
+      "net_qty": 2531.17456,
+      "net_value": 77075.9612389552
+    },
+    {
+      "good": "silk",
+      "output_qty": 1808.4,
+      "input_qty": 259.20000000000005,
+      "output_value": 65202.94703999999,
+      "input_value": 9345.61152,
+      "net_qty": 1549.2,
+      "net_value": 55857.33551999999
+    },
+    {
+      "good": "porcelain",
+      "output_qty": 538.49716242,
+      "input_qty": 0.0,
+      "output_value": 46964.89539616969,
+      "input_value": 0.0,
+      "net_qty": 538.49716242,
+      "net_value": 46964.89539616969
+    },
+    {
+      "good": "opium",
+      "output_qty": 470.2,
+      "input_qty": 0.0,
+      "output_value": 41142.5,
+      "input_value": 0.0,
+      "net_qty": 470.2,
+      "net_value": 41142.5
+    },
+    {
+      "good": "luxury_clothes",
+      "output_qty": 518.4000000000001,
+      "input_qty": 0.0,
+      "output_value": 37474.410240000005,
+      "input_value": 0.0,
+      "net_qty": 518.4000000000001,
+      "net_value": 37474.410240000005
+    },
+    {
+      "good": "fabric",
+      "output_qty": 6600.287081285,
+      "input_qty": 933.568689819,
+      "output_value": 38527.85577958494,
+      "input_value": 5449.520513080449,
+      "net_qty": 5666.718391466,
+      "net_value": 33078.335266504495
+    },
+    {
+      "good": "hardwood",
+      "output_qty": 334.5,
+      "input_qty": 692.2310353285001,
+      "output_value": 23289.161099999998,
+      "input_value": 48195.75515750442,
+      "net_qty": -357.73103532850007,
+      "net_value": -24906.594057504422
+    },
+    {
+      "good": "meat",
+      "output_qty": 459.62018511,
+      "input_qty": 0.0,
+      "output_value": 24130.059718275,
+      "input_value": 0.0,
+      "net_qty": 459.62018511,
+      "net_value": 24130.059718275
+    },
+    {
+      "good": "dye",
+      "output_qty": 1512.870229056,
+      "input_qty": 269.24858121,
+      "output_value": 15128.702290559999,
+      "input_value": 2692.4858120999997,
+      "net_qty": 1243.621647846,
+      "net_value": 12436.216478459999
+    },
+    {
+      "good": "transportation",
+      "output_qty": 217.734052348,
+      "input_qty": 0.0,
+      "output_value": 11431.037748269999,
+      "input_value": 0.0,
+      "net_qty": 217.734052348,
+      "net_value": 11431.037748269999
+    },
+    {
+      "good": "fish",
+      "output_qty": 706.74380005,
+      "input_qty": 0.0,
+      "output_value": 10850.107504317612,
+      "input_value": 0.0,
+      "net_qty": 706.74380005,
+      "net_value": 10850.107504317612
+    },
+    {
+      "good": "merchant_marine",
+      "output_qty": 169.49429999999998,
+      "input_qty": 0.0,
+      "output_value": 10303.663583466,
+      "input_value": 0.0,
+      "net_qty": 169.49429999999998,
+      "net_value": 10303.663583466
+    },
+    {
+      "good": "glass",
+      "output_qty": 1076.99432484,
+      "input_qty": 106.847430174,
+      "output_value": 10769.943248399999,
+      "input_value": 1068.4743017399999,
+      "net_qty": 970.146894666,
+      "net_value": 9701.46894666
+    },
+    {
+      "good": "sugar",
+      "output_qty": 198.86917519999997,
+      "input_qty": 0.0,
+      "output_value": 7066.368685087802,
+      "input_value": 0.0,
+      "net_qty": 198.86917519999997,
+      "net_value": 7066.368685087802
+    },
+    {
+      "good": "small_arms",
+      "output_qty": 124.73400180000002,
+      "input_qty": 0.0,
+      "output_value": 4326.76681773831,
+      "input_value": 0.0,
+      "net_qty": 124.73400180000002,
+      "net_value": 4326.76681773831
+    },
+    {
+      "good": "tools",
+      "output_qty": 249.56256,
+      "input_qty": 300.29130014,
+      "output_value": 11716.46306688,
+      "input_value": 14098.07595897272,
+      "net_qty": -50.728740139999985,
+      "net_value": -2381.6128920927204
+    },
+    {
+      "good": "clippers",
+      "output_qty": 135.6,
+      "input_qty": 112.9962,
+      "output_value": 9329.49018,
+      "input_value": 7774.31370411,
+      "net_qty": 22.603799999999993,
+      "net_value": 1555.1764758900008
+    },
+    {
+      "good": "iron",
+      "output_qty": 144.16928056,
+      "input_qty": 124.7655206,
+      "output_value": 5463.15071754064,
+      "input_value": 4727.864637616401,
+      "net_qty": 19.403759960000002,
+      "net_value": 735.286079924239
+    }
+  ],
+  "building_types": [
+    {
+      "type": "building_subsistence_rice_farm",
+      "levels": 8325,
+      "staffing": 8087.43785,
+      "throughput": 0.0,
+      "output": 890633.9394705918,
+      "input": 0.0,
+      "count": 29,
+      "net": 890633.9394705918
+    },
+    {
+      "type": "building_tea_plantation",
+      "levels": 199,
+      "staffing": 198.9967,
+      "throughput": 0.0,
+      "output": 210828.4613516,
+      "input": 0.0,
+      "count": 22,
+      "net": 210828.4613516
+    },
+    {
+      "type": "building_rice_farm",
+      "levels": 84,
+      "staffing": 83.99496,
+      "throughput": 0.0,
+      "output": 80780.491748574,
+      "input": 0.0,
+      "count": 13,
+      "net": 80780.491748574
+    },
+    {
+      "type": "building_silk_plantation",
+      "levels": 86,
+      "staffing": 86.0,
+      "throughput": 0.0,
+      "output": 65202.94703999999,
+      "input": 0.0,
+      "count": 7,
+      "net": 65202.94703999999
+    },
+    {
+      "type": "building_logging_camp",
+      "levels": 50,
+      "staffing": 49.9998,
+      "throughput": 0.0,
+      "output": 74659.31852174402,
+      "input": 12405.961113039999,
+      "count": 8,
+      "net": 62253.35740870402
+    },
+    {
+      "type": "building_urban_center",
+      "levels": 104,
+      "staffing": 103.85502000000001,
+      "throughput": 0.0,
+      "output": 45694.99065371074,
+      "input": 3389.269935948893,
+      "count": 26,
+      "net": 42305.72071776185
+    },
+    {
+      "type": "building_opium_plantation",
+      "levels": 21,
+      "staffing": 21.0,
+      "throughput": 0.0,
+      "output": 41142.5,
+      "input": 0.0,
+      "count": 3,
+      "net": 41142.5
+    },
+    {
+      "type": "building_furniture_manufactory",
+      "levels": 40,
+      "staffing": 39.99727,
+      "throughput": 0.0,
+      "output": 98558.15642527559,
+      "input": 61965.58157118619,
+      "count": 5,
+      "net": 36592.574854089406
+    },
+    {
+      "type": "building_paper_mill",
+      "levels": 58,
+      "staffing": 57.9994,
+      "throughput": 0.0,
+      "output": 77075.9612389552,
+      "input": 41234.067529998,
+      "count": 7,
+      "net": 35841.89370895721
+    },
+    {
+      "type": "building_textile_mill",
+      "levels": 16,
+      "staffing": 16.0,
+      "throughput": 0.0,
+      "output": 45805.440384,
+      "input": 11867.325120000001,
+      "count": 2,
+      "net": 33938.115264
+    },
+    {
+      "type": "building_banana_plantation",
+      "levels": 20,
+      "staffing": 20.0,
+      "throughput": 0.0,
+      "output": 28843.276950000007,
+      "input": 0.0,
+      "count": 3,
+      "net": 28843.276950000007
+    },
+    {
+      "type": "building_glassworks",
+      "levels": 50,
+      "staffing": 49.990880000000004,
+      "throughput": 0.0,
+      "output": 57734.83864456969,
+      "input": 37782.010984853914,
+      "count": 7,
+      "net": 19952.827659715775
+    },
+    {
+      "type": "building_livestock_ranch",
+      "levels": 31,
+      "staffing": 29.8862,
+      "throughput": 0.0,
+      "output": 17664.93394754602,
+      "input": 0.0,
+      "count": 10,
+      "net": 17664.93394754602
+    },
+    {
+      "type": "building_dye_plantation",
+      "levels": 46,
+      "staffing": 45.99014,
+      "throughput": 0.0,
+      "output": 15128.702290559999,
+      "input": 0.0,
+      "count": 5,
+      "net": 15128.702290559999
+    },
+    {
+      "type": "building_subsistence_pasture",
+      "levels": 345,
+      "staffing": 159.28902000000002,
+      "throughput": 0.0,
+      "output": 14266.091475453144,
+      "input": 0.0,
+      "count": 10,
+      "net": 14266.091475453144
+    },
+    {
+      "type": "building_fishing_wharf",
+      "levels": 27,
+      "staffing": 26.9998,
+      "throughput": 0.0,
+      "output": 10850.107504317612,
+      "input": 0.0,
+      "count": 6,
+      "net": 10850.107504317612
+    },
+    {
+      "type": "building_subsistence_farm",
+      "levels": 233,
+      "staffing": 196.77365,
+      "throughput": 0.0,
+      "output": 10437.96811744845,
+      "input": 0.0,
+      "count": 4,
+      "net": 10437.96811744845
+    },
+    {
+      "type": "building_wheat_farm",
+      "levels": 24,
+      "staffing": 22.885780000000004,
+      "throughput": 0.0,
+      "output": 10030.059249876153,
+      "input": 0.0,
+      "count": 8,
+      "net": 10030.059249876153
+    },
+    {
+      "type": "building_shipyard",
+      "levels": 3,
+      "staffing": 3.0,
+      "throughput": 0.0,
+      "output": 9329.49018,
+      "input": 3341.0890799999997,
+      "count": 1,
+      "net": 5988.401100000001
+    },
+    {
+      "type": "building_tooling_workshop",
+      "levels": 4,
+      "staffing": 3.9994,
+      "throughput": 0.0,
+      "output": 11716.46306688,
+      "input": 5862.638392312,
+      "count": 1,
+      "net": 5853.824674568
+    },
+    {
+      "type": "building_iron_mine",
+      "levels": 7,
+      "staffing": 6.9986,
+      "throughput": 0.0,
+      "output": 5463.15071754064,
+      "input": 1692.11484593272,
+      "count": 3,
+      "net": 3771.0358716079195
+    },
+    {
+      "type": "building_port",
+      "levels": 19,
+      "staffing": 17.258,
+      "throughput": 0.0,
+      "output": 10303.663583466,
+      "input": 7774.31370411,
+      "count": 5,
+      "net": 2529.3498793559993
+    },
+    {
+      "type": "building_arms_industry",
+      "levels": 4,
+      "staffing": 3.998,
+      "throughput": 0.0,
+      "output": 4326.76681773831,
+      "input": 4470.37515291068,
+      "count": 1,
+      "net": -143.60833517237006
+    }
+  ],
+  "states": [
+    {
+      "state_id": 933,
+      "output": 99122.35920885266,
+      "input": 3814.80576779616,
+      "net": 95307.5534410565
+    },
+    {
+      "state_id": 934,
+      "output": 114564.68343372176,
+      "input": 20059.53792993124,
+      "net": 94505.14550379053
+    },
+    {
+      "state_id": 925,
+      "output": 99581.15920035301,
+      "input": 10426.508946,
+      "net": 89154.65025435301
+    },
+    {
+      "state_id": 924,
+      "output": 85451.8283438525,
+      "input": 2842.3459831124374,
+      "net": 82609.48236074006
+    },
+    {
+      "state_id": 913,
+      "output": 79311.86463205704,
+      "input": 131.36796807133268,
+      "net": 79180.4966639857
+    },
+    {
+      "state_id": 907,
+      "output": 85621.7964375,
+      "input": 11506.439492500002,
+      "net": 74115.356945
+    },
+    {
+      "state_id": 931,
+      "output": 73666.5553341904,
+      "input": 4594.230263846965,
+      "net": 69072.32507034343
+    },
+    {
+      "state_id": 23,
+      "output": 80937.3271115864,
+      "input": 14028.947777494439,
+      "net": 66908.37933409197
+    },
+    {
+      "state_id": 927,
+      "output": 65779.4928383176,
+      "input": 98.0168085,
+      "net": 65681.4760298176
+    },
+    {
+      "state_id": 936,
+      "output": 87461.05550903248,
+      "input": 22307.388003964417,
+      "net": 65153.667505068064
+    },
+    {
+      "state_id": 937,
+      "output": 83045.67630117602,
+      "input": 18901.477502154,
+      "net": 64144.19879902202
+    },
+    {
+      "state_id": 24,
+      "output": 67686.12373161517,
+      "input": 5345.437625658444,
+      "net": 62340.68610595672
+    },
+    {
+      "state_id": 928,
+      "output": 68302.11388016593,
+      "input": 6065.6204640000005,
+      "net": 62236.493416165926
+    },
+    {
+      "state_id": 938,
+      "output": 60650.57976915289,
+      "input": 2092.863726,
+      "net": 58557.71604315289
+    },
+    {
+      "state_id": 930,
+      "output": 57658.301428758736,
+      "input": 3814.6885045661943,
+      "net": 53843.612924192545
+    },
+    {
+      "state_id": 914,
+      "output": 70945.20216386231,
+      "input": 18513.412279762684,
+      "net": 52431.78988409963
+    },
+    {
+      "state_id": 908,
+      "output": 52754.408709,
+      "input": 1557.656526,
+      "net": 51196.752183000004
+    },
+    {
+      "state_id": 919,
+      "output": 48918.59618247227,
+      "input": 31.14081124906986,
+      "net": 48887.4553712232
+    },
+    {
+      "state_id": 935,
+      "output": 48915.17275127431,
+      "input": 64.710126,
+      "net": 48850.46262527431
+    },
+    {
+      "state_id": 929,
+      "output": 56032.019298966115,
+      "input": 7881.889508390125,
+      "net": 48150.12979057599
+    },
+    {
+      "state_id": 909,
+      "output": 63274.41986101598,
+      "input": 18448.175717023503,
+      "net": 44826.24414399247
+    },
+    {
+      "state_id": 910,
+      "output": 42406.29199200399,
+      "input": 375.970425961,
+      "net": 42030.32156604299
+    },
+    {
+      "state_id": 917,
+      "output": 41159.648676540644,
+      "input": 3343.6673719327205,
+      "net": 37815.98130460792
+    },
+    {
+      "state_id": 932,
+      "output": 48452.00902101105,
+      "input": 13097.485000377656,
+      "net": 35354.5240206334
+    },
+    {
+      "state_id": 922,
+      "output": 34771.88424690581,
+      "input": 0.0,
+      "net": 34771.88424690581
+    },
+    {
+      "state_id": 920,
+      "output": 24415.697812000002,
+      "input": 0.0,
+      "net": 24415.697812000002
+    },
+    {
+      "state_id": 921,
+      "output": 18983.40666,
+      "input": 0.0,
+      "net": 18983.40666
+    },
+    {
+      "state_id": 939,
+      "output": 19361.705514579004,
+      "input": 412.8093,
+      "net": 18948.896214579003
+    },
+    {
+      "state_id": 918,
+      "output": 20919.634912999998,
+      "input": 2028.1536,
+      "net": 18891.481312999997
+    },
+    {
+      "state_id": 912,
+      "output": 9953.953596500001,
+      "input": 0.0,
+      "net": 9953.953596500001
+    },
+    {
+      "state_id": 923,
+      "output": 5975.07814589925,
+      "input": 0.0,
+      "net": 5975.07814589925
+    },
+    {
+      "state_id": 915,
+      "output": 5752.357157559374,
+      "input": 0.0,
+      "net": 5752.357157559374
+    },
+    {
+      "state_id": 216,
+      "output": 4541.7675588721,
+      "input": 0.0,
+      "net": 4541.7675588721
+    },
+    {
+      "state_id": 217,
+      "output": 2873.25294470619,
+      "input": 0.0,
+      "net": 2873.25294470619
+    },
+    {
+      "state_id": 906,
+      "output": 2227.79740537432,
+      "input": 0.0,
+      "net": 2227.79740537432
+    },
+    {
+      "state_id": 905,
+      "output": 1941.5960580519998,
+      "input": 0.0,
+      "net": 1941.5960580519998
+    },
+    {
+      "state_id": 975,
+      "output": 1242.1049648668,
+      "input": 0.0,
+      "net": 1242.1049648668
+    },
+    {
+      "state_id": 911,
+      "output": 594.6673175825549,
+      "input": 0.0,
+      "net": 594.6673175825549
+    },
+    {
+      "state_id": 966,
+      "output": 481.42480260335003,
+      "input": 0.0,
+      "net": 481.42480260335003
+    },
+    {
+      "state_id": 1135,
+      "output": 337.76050950300004,
+      "input": 0.0,
+      "net": 337.76050950300004
+    },
+    {
+      "state_id": 916,
+      "output": 154.79808615,
+      "input": 0.0,
+      "net": 154.79808615
+    },
+    {
+      "state_id": 1132,
+      "output": 127.011131815,
+      "input": 0.0,
+      "net": 127.011131815
+    },
+    {
+      "state_id": 984,
+      "output": 123.13473739920002,
+      "input": 0.0,
+      "net": 123.13473739920002
+    }
+  ],
+  "warnings": []
+}

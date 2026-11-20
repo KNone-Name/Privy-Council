@@ -1,0 +1,16 @@
+﻿# 面板“发送”按钮的信号：写一行 debug_log，原生侧 tail 日志即可知道玩家按了发送。
+# 真正的输入文本仍由原生侧从 editbox 读取（脚本拿不到 editbox 内容）。
+v3ai_send_sgui = {
+	scope = country
+
+	effect = {
+		debug_log = "V3AI|SEND"
+	}
+}
+
+v3ai_clear_sgui = {
+	scope = country
+	effect = {
+		debug_log = "V3AI|CLEAR"
+	}
+}

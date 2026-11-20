@@ -1,0 +1,149 @@
+[
+  {
+    "building": "building_tea_plantation",
+    "count": 22,
+    "levels": 199,
+    "building_unlocked": true,
+    "missing_building_techs": [],
+    "groups": [
+      {
+        "group": "pmg_base_building_tea_plantation",
+        "current": [
+          "default_building_tea_plantation"
+        ],
+        "hidden_when_unavailable": false,
+        "pms": [
+          {
+            "pm": "default_building_tea_plantation",
+            "group": "pmg_base_building_tea_plantation",
+            "status": "active",
+            "label": "已启用",
+            "reasons": [],
+            "missing_techs": [],
+            "missing_laws": [],
+            "blocked_laws": [],
+            "missing_pms": [],
+            "conditional": [],
+            "hidden": false,
+            "is_default": false
+          },
+          {
+            "pm": "automatic_irrigation_building_tea_plantation",
+            "group": "pmg_base_building_tea_plantation",
+            "status": "locked",
+            "label": "不可用",
+            "reasons": [
+              "缺科技: pumpjacks"
+            ],
+            "missing_techs": [
+              "pumpjacks"
+            ],
+            "missing_laws": [],
+            "blocked_laws": [],
+            "missing_pms": [],
+            "conditional": [],
+            "hidden": false,
+            "is_default": false
+          }
+        ]
+      },
+      {
+        "group": "pmg_tea_exploitation",
+        "current": [
+          "default_labour"
+        ],
+        "hidden_when_unavailable": false,
+        "pms": [
+          {
+            "pm": "slave_exploitation_tea",
+            "group": "pmg_tea_exploitation",
+            "status": "locked",
+            "label": "不可用",
+            "reasons": [
+              "被法律禁止: law_slavery_banned"
+            ],
+            "missing_techs": [],
+            "missing_laws": [],
+            "blocked_laws": [
+              "law_slavery_banned"
+            ],
+            "missing_pms": [],
+            "conditional": [],
+            "hidden": false,
+            "is_default": false
+          },
+          {
+            "pm": "worker_exploitation_tea",
+            "group": "pmg_tea_exploitation",
+            "status": "available",
+            "label": "可用",
+            "reasons": [],
+            "missing_techs": [],
+            "missing_laws": [],
+            "blocked_laws": [],
+            "missing_pms": [],
+            "conditional": [],
+            "hidden": false,
+            "is_default": false
+          },
+          {
+            "pm": "default_labour",
+            "group": "pmg_tea_exploitation",
+            "status": "active",
+            "label": "已启用",
+            "reasons": [],
+            "missing_techs": [],
+            "missing_laws": [],
+            "blocked_laws": [],
+            "missing_pms": [],
+            "conditional": [],
+            "hidden": false,
+            "is_default": false
+          }
+        ]
+      },
+      {
+        "group": "pmg_train_automation_building_tea_plantation",
+        "current": [
+          "pm_road_carts"
+        ],
+        "hidden_when_unavailable": false,
+        "pms": [
+          {
+            "pm": "pm_road_carts",
+            "group": "pmg_train_automation_building_tea_plantation",
+            "status": "active",
+            "label": "已启用",
+            "reasons": [],
+            "missing_techs": [],
+            "missing_laws": [],
+            "blocked_laws": [],
+            "missing_pms": [],
+            "conditional": [],
+            "hidden": false,
+            "is_default": false
+          },
+          {
+            "pm": "pm_steam_rail_transport",
+            "group": "pmg_train_automation_building_tea_plantation",
+            "status": "locked",
+            "label": "不可用",
+            "reasons": [
+              "缺科技: railways"
+            ],
+            "missing_techs": [
+              "railways"
+            ],
+            "missing_laws": [],
+            "blocked_laws": [],
+            "missing_pms": [],
+            "conditional": [],
+            "hidden": false,
+            "is_default": false
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  }
+]

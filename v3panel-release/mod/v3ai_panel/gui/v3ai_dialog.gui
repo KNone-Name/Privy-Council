@@ -1,0 +1,82 @@
+﻿types v3ai_dialog_types
+{
+	type v3ai_dialog = default_popup {
+		name = "v3ai_dialog"
+		size = { 1000 760 }
+		position = { 981 145 }
+		movable = no
+		visible = "[GetVariableSystem.Exists('v3ai_open_window')]"
+
+		blockoverride "window_header_name" {
+			text = "V3AI_PANEL_HEADER"
+		}
+
+		blockoverride "header_close_button_visibility" {
+			visible = yes
+		}
+
+		blockoverride "header_close_button" {
+			onclick = "[GetVariableSystem.Clear('v3ai_open_window')]"
+		}
+
+		blockoverride "content" {
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				spacing = 8
+				margin = { 16 20 }
+				margin_top = 95
+
+				editbox = {
+					name = "v3ai_reply"
+					size = { 940 300 }
+					alwaystransparent = no
+					focuspolicy = all
+					multiline = yes
+					align = left|top
+					background = {
+						using = text_edit_bg
+					}
+				}
+
+				hbox = {
+					spacing = 8
+					layoutpolicy_horizontal = expanding
+
+					editbox = {
+						name = "v3ai_input"
+						size = { 660 36 }
+						alwaystransparent = no
+						focuspolicy = all
+						focus_on_visible = yes
+						onreturnpressed = "[GetScriptedGui('v3ai_send_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						align = nobaseline
+						background = {
+							using = text_edit_bg
+						}
+					}
+
+					button_standard = {
+						name = "v3ai_send"
+						size = { 100 36 }
+						text = "V3AI_SEND"
+						onclick = "[GetScriptedGui('v3ai_send_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+
+					button_standard = {
+						name = "v3ai_clear"
+						size = { 80 36 }
+						text = "V3AI_CLEAR"
+						onclick = "[GetScriptedGui('v3ai_clear_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+				}
+
+				textbox = {
+					text = "V3AI_HINT"
+					autoresize = yes
+					align = nobaseline
+				}
+			}
+		}
+	}
+}

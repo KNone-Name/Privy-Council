@@ -1,0 +1,14 @@
+﻿l_simp_chinese:
+ je_group_v3ai:0 "御前 AI"
+ je_v3ai_panel:0 "御前 AI"
+ je_v3ai_panel_desc:0 "与外部 LLM 议事的面板。输入问题，回车发送；回复显示在上方。"
+ je_v3ai_panel_reason:0 "与外部 LLM 议事。"
+
+ V3AI_SIDEBAR:0 "御前 AI"
+ V3AI_SIDEBAR_TOOLTIP:0 "打开/关闭御前 AI 面板"
+
+ V3AI_PANEL_HEADER:0 "御前 AI · 议事"
+ V3AI_SEND:0 "发送"
+ V3AI_CLOSE:0 "关闭"
+ V3AI_HINT:0 "输入后按 Enter 发送；Esc 关闭。"
+ V3AI_CLEAR:0 "清空"

@@ -1,0 +1,6 @@
+{
+  "actions": [
+    {"kind": "build", "state_id": 910, "building": "building_banana_plantation", "levels": 5,
+     "rationale": "one-shot LLM 基于 15:41 快照选择：邵州香蕉，GDP 增量最高、剩余 171、预算为正"}
+  ]
+}

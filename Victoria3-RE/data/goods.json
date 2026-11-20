@@ -1,0 +1,272 @@
+{
+ "0": {
+  "name": "ammunition",
+  "cost": 50.0,
+  "category": "military"
+ },
+ "1": {
+  "name": "small_arms",
+  "cost": 60.0,
+  "category": "military"
+ },
+ "2": {
+  "name": "artillery",
+  "cost": 70.0,
+  "category": "military"
+ },
+ "3": {
+  "name": "tanks",
+  "cost": 80.0,
+  "category": "military"
+ },
+ "4": {
+  "name": "aeroplanes",
+  "cost": 80.0,
+  "category": "military"
+ },
+ "5": {
+  "name": "manowars",
+  "cost": 70.0,
+  "category": "military"
+ },
+ "6": {
+  "name": "ironclads",
+  "cost": 80.0,
+  "category": "military"
+ },
+ "7": {
+  "name": "grain",
+  "cost": 20.0,
+  "category": "staple"
+ },
+ "8": {
+  "name": "fish",
+  "cost": 20.0,
+  "category": "staple"
+ },
+ "9": {
+  "name": "fabric",
+  "cost": 20.0,
+  "category": "staple"
+ },
+ "10": {
+  "name": "wood",
+  "cost": 20.0,
+  "category": "staple"
+ },
+ "11": {
+  "name": "groceries",
+  "cost": 30.0,
+  "category": "staple"
+ },
+ "12": {
+  "name": "clothes",
+  "cost": 30.0,
+  "category": "staple"
+ },
+ "13": {
+  "name": "furniture",
+  "cost": 30.0,
+  "category": "staple"
+ },
+ "14": {
+  "name": "paper",
+  "cost": 30.0,
+  "category": "staple"
+ },
+ "15": {
+  "name": "services",
+  "cost": 30.0,
+  "category": "staple"
+ },
+ "16": {
+  "name": "transportation",
+  "cost": 30.0,
+  "category": "staple"
+ },
+ "17": {
+  "name": "electricity",
+  "cost": 30.0,
+  "category": "staple"
+ },
+ "18": {
+  "name": "merchant_marine",
+  "cost": 50.0,
+  "category": "staple"
+ },
+ "19": {
+  "name": "clippers",
+  "cost": 60.0,
+  "category": "industrial"
+ },
+ "20": {
+  "name": "steamers",
+  "cost": 70.0,
+  "category": "industrial"
+ },
+ "21": {
+  "name": "silk",
+  "cost": 40.0,
+  "category": "industrial"
+ },
+ "22": {
+  "name": "dye",
+  "cost": 40.0,
+  "category": "industrial"
+ },
+ "23": {
+  "name": "sulfur",
+  "cost": 50.0,
+  "category": "industrial"
+ },
+ "24": {
+  "name": "coal",
+  "cost": 30.0,
+  "category": "industrial"
+ },
+ "25": {
+  "name": "iron",
+  "cost": 40.0,
+  "category": "industrial"
+ },
+ "26": {
+  "name": "lead",
+  "cost": 40.0,
+  "category": "industrial"
+ },
+ "27": {
+  "name": "copper",
+  "cost": 40.0,
+  "category": "industrial"
+ },
+ "28": {
+  "name": "hardwood",
+  "cost": 40.0,
+  "category": "industrial"
+ },
+ "29": {
+  "name": "rubber",
+  "cost": 40.0,
+  "category": "industrial"
+ },
+ "30": {
+  "name": "oil",
+  "cost": 40.0,
+  "category": "industrial"
+ },
+ "31": {
+  "name": "engines",
+  "cost": 60.0,
+  "category": "industrial"
+ },
+ "32": {
+  "name": "steel",
+  "cost": 50.0,
+  "category": "industrial"
+ },
+ "33": {
+  "name": "glass",
+  "cost": 40.0,
+  "category": "industrial"
+ },
+ "34": {
+  "name": "fertilizer",
+  "cost": 30.0,
+  "category": "industrial"
+ },
+ "35": {
+  "name": "tools",
+  "cost": 40.0,
+  "category": "industrial"
+ },
+ "36": {
+  "name": "explosives",
+  "cost": 50.0,
+  "category": "industrial"
+ },
+ "37": {
+  "name": "porcelain",
+  "cost": 70.0,
+  "category": "luxury"
+ },
+ "38": {
+  "name": "meat",
+  "cost": 30.0,
+  "category": "luxury"
+ },
+ "39": {
+  "name": "fruit",
+  "cost": 30.0,
+  "category": "luxury"
+ },
+ "40": {
+  "name": "liquor",
+  "cost": 30.0,
+  "category": "luxury"
+ },
+ "41": {
+  "name": "wine",
+  "cost": 50.0,
+  "category": "luxury"
+ },
+ "42": {
+  "name": "tea",
+  "cost": 50.0,
+  "category": "luxury"
+ },
+ "43": {
+  "name": "coffee",
+  "cost": 50.0,
+  "category": "luxury"
+ },
+ "44": {
+  "name": "sugar",
+  "cost": 30.0,
+  "category": "luxury"
+ },
+ "45": {
+  "name": "tobacco",
+  "cost": 40.0,
+  "category": "luxury"
+ },
+ "46": {
+  "name": "opium",
+  "cost": 50.0,
+  "category": "luxury"
+ },
+ "47": {
+  "name": "automobiles",
+  "cost": 100.0,
+  "category": "luxury"
+ },
+ "48": {
+  "name": "telephones",
+  "cost": 70.0,
+  "category": "luxury"
+ },
+ "49": {
+  "name": "radios",
+  "cost": 80.0,
+  "category": "luxury"
+ },
+ "50": {
+  "name": "luxury_clothes",
+  "cost": 60.0,
+  "category": "luxury"
+ },
+ "51": {
+  "name": "luxury_furniture",
+  "cost": 60.0,
+  "category": "luxury"
+ },
+ "52": {
+  "name": "gold",
+  "cost": 100.0,
+  "category": "luxury"
+ },
+ "53": {
+  "name": "fine_art",
+  "cost": 200.0,
+  "category": "luxury"
+ }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "V3AI 御前面板",
+  "id": "v3ai_panel",
+  "version": "0.1.0",
+  "supported_game_version": "1.15.*",
+  "short_description": "游戏内 LLM 御前面板：输入经本地回环送到外部 v3ai 服务。",
+  "tags": ["Utilities", "Gameplay"],
+  "relationships": [],
+  "game_id": "victoria3",
+  "game_custom_data": {
+    "multiplayer_synchronized": true
+  }
+}

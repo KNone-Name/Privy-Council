@@ -1,0 +1,7 @@
+name="V3AI 御前面板"
+version="0.1.0"
+supported_version="1.15.*"
+path="mod/v3ai_panel"
+tags={
+	"Utilities"
+}

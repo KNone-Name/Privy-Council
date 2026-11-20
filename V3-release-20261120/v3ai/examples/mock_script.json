@@ -1,0 +1,6 @@
+[
+  {"tool": "get_overview", "arguments": {}},
+  {"tool": "propose_build", "arguments": {"state_id": 907, "building": "building_tea_plantation", "levels": 2, "rationale": "四川有茶资源，扩茶出口"}},
+  {"tool": "propose_pm", "arguments": {"state_id": 928, "building": "building_textile_mill", "pm": "pm_no_luxury_clothes", "rationale": "测试可用 PM"}},
+  {"tool": "finish_cycle", "arguments": {"summary": "扩茶 + 调整纺织 PM", "rationale": "mock 脚本演示完整链路"}}
+]

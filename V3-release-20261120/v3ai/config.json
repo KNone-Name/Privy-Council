@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "active_provider": "local",
+  "providers": {
+    "local": {
+      "label": "本地 OpenAI 兼容端点",
+      "base_url": "http://127.0.0.1:18200/v1",
+      "api_key": "",
+      "model": "kvmem-polystrata-qwen35",
+      "temperature": 0.7,
+      "max_tokens": 4096,
+      "supports_tools": true,
+      "timeout_s": 600
+    },
+    "deepseek": {
+      "label": "DeepSeek 云端",
+      "base_url": "https://api.deepseek.com/v1",
+      "api_key": "",
+      "model": "deepseek-chat",
+      "temperature": 0.4,
+      "max_tokens": 8192,
+      "supports_tools": true,
+      "timeout_s": 180
+    },
+    "ollama": {
+      "label": "Ollama 本地",
+      "base_url": "http://127.0.0.1:11434/v1",
+      "api_key": "",
+      "model": "qwen3:32b",
+      "temperature": 0.7,
+      "max_tokens": 8192,
+      "supports_tools": true,
+      "timeout_s": 300
+    }
+  },
+  "source": "auto",
+  "loop": {
+    "enabled": false,
+    "interval_s": 20,
+    "execute": true,
+    "pause_if_stale": true
+  },
+  "paths": {
+    "snapshot": "snap_live.json",
+    "state_dir": "v3ai/state",
+    "state_meta": "v3ai/data/state_meta.json",
+    "game_dir": null,
+    "journal": null
+  },
+  "service": {
+    "injector": "bridge/injector.exe",
+    "dll": "bridge/v3inject.dll",
+    "watch_script": "v3.py",
+    "watch_interval": 5,
+    "llm_start_cmd": "",
+    "llm_stop_cmd": ""
+  },
+  "executor": {
+    "mode": "bridge",
+    "bridge": {
+      "dir": "bridge",
+      "timeout_s": 30,
+      "poll_s": 0.2,
+      "log": "v3inject.log",
+      "expected_exe_size": 100221048
+    }
+  },
+  "review": {
+    "allow_conditional_pm": false,
+    "max_pending": 16,
+    "min_treasury": 0.0,
+    "max_snapshot_age_s": 3600,
+    "require_world_loaded": true,
+    "warn_pm_patterns": [
+      "worker_exploitation_",
+      "pm_simple_organization"
+    ],
+    "block_pm_patterns": [],
+    "warn_pm_modifier_keys": [
+      "bureaucracy",
+      "construction",
+      "mortality",
+      "standard_of_living",
+      "radicals",
+      "loyalists",
+      "qualifications",
+      "literacy",
+      "innovation",
+      "authority",
+      "influence",
+      "infrastructure"
+    ]
+  },
+  "agent": {
+    "mode": "oneshot",
+    "max_tool_rounds": 6,
+    "max_actions_per_cycle": 0,
+    "max_levels_per_action": 0,
+    "cycle_interval_s": 10,
+    "auto_execute": true,
+    "require_confirm": false,
+    "allow_ai_strategy_switch": true,
+    "max_tool_result_chars": 1000000,
+    "max_context_chars": 0,
+    "max_history_cycles": 12,
+    "brief_level": "compact",
+    "toolset": "full",
+    "freeze_cycle": true,
+    "temperature": null,
+    "max_tokens": null
+  }
+}

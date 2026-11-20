@@ -1,0 +1,6 @@
+[
+  {"tool": "get_overview", "arguments": {}},
+  {"tool": "build_candidates", "arguments": {"top": 5}},
+  {"tool": "propose_build", "arguments": {"state_id": 910, "building": "building_banana_plantation", "levels": 2, "rationale": "fresh snapshot / bridge queue test"}},
+  {"tool": "finish_cycle", "arguments": {"summary": "fresh snapshot + bridge queue validation", "rationale": "mock"}}
+]

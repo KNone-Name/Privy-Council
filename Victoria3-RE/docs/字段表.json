@@ -1,0 +1,1060 @@
+{
+ "_meta": {
+  "game": "Victoria 3",
+  "version": "1.15.0",
+  "exe_size": 99988600,
+  "image_base_static": "0x140000000",
+  "note": "运行时地址 = 静态地址 - 0x140000000 + 模块基址；定点除数 100000",
+  "verified": "2026-11-09 内存读取与存档 157={} 块逐位对照；2026-11-10 科技内存路径；2026-11-11 税率/消费税容器（同国前后逐字节对比定位）; 2026-11-11 关税表结构与市场 id"
+ },
+ "fixed_point_divisor": 100000.0,
+ "CCountryLaw": {
+  "_note": "99,995 个，步长 0x90；每个法律组×每国一条，且存在新旧两套并存",
+  "law_type_ptr": {
+   "offset": "0x28",
+   "type": "ptr",
+   "verified": true,
+   "note": "指向类型对象；类型对象 +0x18 是 MSVC std::string 法律名（短名 SSO 内联、长名堆分配）"
+  },
+  "country_id": {
+   "offset": "0x30",
+   "type": "u32",
+   "verified": true,
+   "note": "大清=157；实测 282 条记录"
+  },
+  "active": {
+   "offset": "0x34",
+   "type": "i32",
+   "verified": true,
+   "note": "1=当前生效；注意旧副本也可能为 1"
+  },
+  "date": {
+   "offset": "0x38",
+   "type": "i64",
+   "note": "生效/变更日期，高 16 位是年份"
+  },
+  "generation_note": {
+   "value": "两套并存",
+   "note": "新旧两套对象的 0x28 指针相同、标志都为 1；实测真对象在较低地址区块（0x563DCE…），旧副本在较高区块（0x564632…），同组取地址最小者与界面一致（已用两次改法验证）"
+  }
+ },
+ "CPop": {
+  "_note": "27,244 个（与存档 pops 条数完全一致），步长 0x58；可按 +0x08 的 id 与存档逐条配对",
+  "pop_id": {
+   "offset": "0x08",
+   "type": "u32(低24位)",
+   "verified": true,
+   "note": "与存档 pops.database 的键一一对应，27244/27244 全部配对成功"
+  },
+  "profession_ptr": {
+   "offset": "0x10",
+   "type": "ptr",
+   "verified": true,
+   "note": "15 种不同指针（=存档 15 个职业），聚类纯组 100%"
+  },
+  "religion_ptr": {
+   "offset": "0x18",
+   "type": "ptr",
+   "verified": true,
+   "note": "15 种不同指针；目标对象 +0x48 处是宗教名（catholic/sunni/…）"
+  },
+  "employed": {
+   "offset": "0x30",
+   "type": "i64",
+   "verified": true,
+   "note": "建筑中的就业人数，不是总劳动力！北京实测 537,724，而 workforce 合计 3,757,253（14.3%）"
+  },
+  "state_id": {
+   "offset": "0x40",
+   "type": "u32",
+   "verified": true,
+   "note": "914 命中 46 次，与存档 100% 匹配"
+  },
+  "culture_id": {
+   "offset": "0x48",
+   "type": "u32",
+   "verified": true,
+   "note": "309 种取值，与存档文化数一致，匹配 100%"
+  },
+  "wealth": {
+   "offset": "0x50",
+   "type": "i32",
+   "verified": true,
+   "note": "财富等级，匹配 100%"
+  },
+  "previous_qol": {
+   "offset": "0x54",
+   "type": "i32",
+   "verified": true,
+   "note": "上一生活水平，匹配 100%"
+  },
+  "workforce_note": {
+   "value": "不单存",
+   "note": "workforce+dependents = states 的总人口；各职业 workforce 用 quals 读（与存档一致）；CPop 只存就业人数"
+  }
+ },
+ "CDecree": {
+  "_note": "地方法令实例；330 个，步长 0x28",
+  "country_id": {
+   "offset": "0x08",
+   "type": "u32",
+   "verified": true,
+   "note": "大清=157；注意 +0x00 是 8 字节 vtable，+0x04 是它的高半字，别读错"
+  },
+  "state_id": {
+   "offset": "0x0C",
+   "type": "u32",
+   "verified": true,
+   "note": "大清实测 922 / 932"
+  },
+  "type_ptr": {
+   "offset": "0x10",
+   "type": "CDecreeType*",
+   "verified": true
+  },
+  "instance_id": {
+   "offset": "0x20",
+   "type": "u64",
+   "note": "1,2,3… 递增"
+  }
+ },
+ "CDecreeType": {
+  "_note": "法令定义；18 个（与 game/common/decrees/00_decree.txt 一致），步长 0x300",
+  "name": {
+   "offset": "0x18",
+   "type": "char*",
+   "verified": true,
+   "note": "指向 ASCII 名字，如 decree_road_maintenance"
+  }
+ },
+ "CCountry": {
+  "_note": "2026-11-10 修正：整套偏移相对旧记录整体 -0x10（旧记录用的是 +0x10 处的子对象基址）",
+  "id": {
+   "offset": "0x08",
+   "type": "u32",
+   "verified": true,
+   "note": "735 个实例/735 种取值/0~734，verify 验证通过"
+  },
+  "budget_base": {
+   "offset": "0x12D8",
+   "type": "struct"
+  },
+  "gold_reserve": {
+   "offset": "0x12F8",
+   "type": "i64",
+   "scale": 100000,
+   "verified": true,
+   "note": "大清读到 424249415543 = £4,242,494.16，与存档一致"
+  },
+  "expenses": {
+   "offset": "0x1D50",
+   "type": "i64[22]",
+   "scale": 100000,
+   "verified": true
+  },
+  "income": {
+   "offset": "0x1E00",
+   "type": "i64[16]",
+   "scale": 100000,
+   "verified": true
+  },
+  "credit_limit": {
+   "offset": "0x2198",
+   "type": "i64",
+   "scale": 100000,
+   "verified": true,
+   "note": "大清 155464941.55"
+  },
+  "loan_principal": {
+   "offset": "0x21A0",
+   "type": "i64",
+   "scale": 100000,
+   "verified": true
+  },
+  "timed_modifiers": {
+   "offset": "0x730",
+   "type": "vector<实例*>",
+   "verified": true,
+   "note": "临时（带期限）修正列表；实例 +0x00→CStaticModifier、+0x08 数值÷1e5、+0x10 起始、+0x18 结束"
+  },
+  "timed_modifier_date_encoding": {
+   "value": "低32位=小时计数，u16=年份；时长=(结束低32-起始低32)/24 天",
+   "note": "例如 0x072C001A0391C1D0 → 1836 年；与 0x0736… 相差 87600 小时 = 3650 天"
+  },
+  "construction_ptr": {
+   "offset": "0xA00",
+   "type": "ptr",
+   "note": "+0x10 为建造队列"
+  },
+  "stride": {
+   "value": "0x2638",
+   "verified": true,
+   "note": "735 个实例相邻地址差全等；实测 735*0x2638 ≈ 6.9MB 连续数组"
+  },
+  "budget_object": {
+   "offset": "0x12D8",
+   "type": "CCountryBudget（内联）",
+   "verified": true,
+   "note": "预算子对象；+0x20 是 money（=gold_reserve 0x12F8）。对象总长 0x2638，预算部分占 0x12D8~0x2638 共 0x1360 字节"
+  },
+  "tax_level": {
+   "offset": "0x2498",
+   "type": "u32",
+   "verified": true,
+   "note": "税收等级枚举 very_low=0 low=1 medium=2 high=3 very_high=4。735 国取值直方图 723/6/5/1 与存档完全一致；玩家把滑块拖到第 5 档后读数由 1 变 4"
+  },
+  "taxed_goods": {
+   "offset": "0x2500 / 0x2508 / 0x250C",
+   "type": "ptr + u32 数量 + u32 容量",
+   "verified": true,
+   "note": "消费税商品列表；元素是 8 字节 CGoods*，商品名在 CGoods+0x18 的 MSVC std::string。玩家开征 2 件后由 ptr=0/n=0/cap=0 变为 n=2/cap=2，解出 services、transportation"
+  },
+  "timed_income_consumption_tax": {
+   "offset": "0x1E18 (income[3])",
+   "type": "i64",
+   "scale": 100000,
+   "verified": true,
+   "note": "消费税收入。低档 20% 时 £8410，极高档 35% 时 £14730.89，比值 1.7521 ≈ 35/20，确证"
+  },
+  "market_id": {
+   "offset": "0x0AE4",
+   "type": "u32",
+   "verified": true,
+   "note": "所属市场 id；0xFFFFFFFF 表示该国没有市场（286 国）。449 国与存档 market= 字段 100% 吻合"
+  },
+  "base_wage": {
+   "offset": "0x2150",
+   "type": "i64",
+   "scale": 100000,
+   "verified": true,
+   "note": "基础工资；735/735 与存档 budget.base_wage 相等"
+  },
+  "gov_cash_reserves_ownership": {
+   "offset": "0x2160",
+   "type": "i64",
+   "scale": 100000,
+   "verified": true,
+   "note": "政府现金储备所有权比例；97/98 命中"
+  },
+  "weekly_investment_pool_change": {
+   "offset": "0x1D18",
+   "type": "i64",
+   "scale": 100000,
+   "verified": true,
+   "note": "每周投资池变化（来自投资）；445/445 与存档 weekly_investment_pool_change_from_investment 相等"
+  }
+ },
+ "CMarket": {
+  "goods_prices": {
+   "offset": "0x6F0",
+   "type": "std::vector<int64>[54]",
+   "layout": "{ptr, size=54, cap=54} 三连，元素在 ptr 指向的堆数组",
+   "scale": 100000,
+   "verified": true,
+   "note": "第 i 项 = 商品 i 的当前市场价。2026-11-09 修正：原记 0x700 偏 0x10，实际向量头在 0x6F0；索引 3/4/5 = 80/80/70 与存档一致"
+  },
+  "market_id": {
+   "offset": "0x10",
+   "type": "u32",
+   "verified": true,
+   "note": "305 个实例 305 种取值 0~304；大清市场 = 49"
+  },
+  "owner_country_id": {
+   "offset": "0x838",
+   "type": "u32",
+   "verified": true,
+   "note": "305 个市场 305 个所有者；大清市场读到 157"
+  },
+  "object_stride": {
+   "value": "0xCD8"
+  },
+  "trade_vectors_unlabeled": {
+   "offset": "0x40/0xE0/0x130/0x180/0x1D0/0x220/0x280/0x2D0/0x320/0x370/0x3C0/0x410/0x460/0x4B0/0x500/0x550",
+   "type": "std::vector<int64>[54]",
+   "verified": false,
+   "note": "都是 54 元素向量，疑似订单/库存/产量；存档不保存市场商品数据，需用界面数值锚定"
+  },
+  "demand": {
+   "offset": "0x1D0",
+   "type": "std::vector<int64>[54]",
+   "verified": true,
+   "layout": "同 supply",
+   "note": "买入需求"
+  },
+  "supply": {
+   "offset": "0x220",
+   "type": "std::vector<int64>[54]",
+   "verified": true,
+   "layout": "偏移处是 {ptr, size=54, cap=54}，元素在 ptr 指向的堆数组——不是内联数组",
+   "note": "卖出供给。2026-11-11 修正：必须按 vector 头读 ptr 再解引用，直接内联读会得到空容器哨兵 0x7FF7DFFC8DC0"
+  },
+  "demand_copy": {
+   "offset": "0xE0",
+   "type": "vector<i64>×54",
+   "note": "需求的另一份，数值几乎相同"
+  },
+  "supply_copy": {
+   "offset": "0x40",
+   "type": "vector<i64>×54",
+   "note": "供给的另一份"
+  },
+  "supply_demand_scale": {
+   "value": "100000",
+   "note": "与价格同一套定点。已用界面核对：grain 供需 17.1K/28.4K、fabric 3.42K/6.98K、dye 560/1.58K、glass 605/1.22K 全部吻合"
+  },
+  "prices_note": "prices@0x6F0 同样是 vector，先读 ptr"
+ },
+ "CJominiPlayer": {
+  "_note": "每个玩家一个实例；vtable 0x1449B5E30，实测 1 个实例",
+  "country_ptr": {
+   "offset": "0x50",
+   "type": "CCountry*",
+   "verified": false
+  },
+  "country_id": {
+   "offset": "0x58",
+   "type": "u32",
+   "verified": true,
+   "note": "实时：用 tag 切国家时 157->3->1->38 同步变化"
+  },
+  "user_string": {
+   "offset": "0x28",
+   "type": "std::string",
+   "verified": true,
+   "note": "玩家名，SSO 布局 {buf@+0x28, size@+0x38, cap@+0x40}"
+  },
+  "player_uid": {
+   "offset": "0x48",
+   "type": "u64"
+  },
+  "country_id_copy": {
+   "offset": "0x1DC",
+   "type": "u32",
+   "note": "副本/缓存，非权威"
+  }
+ },
+ "CState": {
+  "_note": "1156 个对象；对象步长 0x1EF8；主 vtable 0x1446B7700 位于 +0",
+  "vtable": {
+   "offset": "0x00",
+   "type": "ptr",
+   "note": "0x1446B7700"
+  },
+  "pricing_data": {
+   "offset": "0x08",
+   "type": "CStatePricingData*",
+   "note": "内嵌子对象，vtable 0x1446B7C88"
+  },
+  "state_id": {
+   "offset": "0x10",
+   "type": "u32",
+   "verified": true,
+   "note": "连续三个实例依次为 917/918/919；1156 实例/1156 种取值/0~1155 全覆盖"
+  },
+  "arable_land_total": {
+   "offset": "0x1218",
+   "type": "i32",
+   "verified": true,
+   "note": "总耕地：state 914 = 340（3 级建筑占 3，剩 337 未开发）；盛京 915 = 75"
+  },
+  "arable_available_candidate": {
+   "offset": "0xE60",
+   "type": "i32",
+   "note": "盛京读 19，与界面『19 可用』一致；但 0xE64 同为 19，待区分"
+  },
+  "arable_available_candidate2": {
+   "offset": "0xE64",
+   "type": "i32",
+   "note": "盛京读 19；两字段在全州分布不同，不是简单副本"
+  },
+  "owner_country_id": {
+   "offset": "0xEC8",
+   "type": "u32",
+   "verified": true,
+   "note": "大清 43 个州 id 与存档逐个一致（23 24 216 217 905-925/缺926 927-939 966 975 984 1132 1135）；注意不是 0xED8"
+  },
+  "capital_province": {
+   "offset": "0xEC0",
+   "type": "u32",
+   "verified": true,
+   "note": "state 0 读到 23571，与存档 capital=23571 一致"
+  },
+  "previous_country": {
+   "offset": "0xECC",
+   "type": "u32",
+   "note": "初值与 country 相同"
+  },
+  "pop_lower_strata": {
+   "offset": "0x1258",
+   "type": "i64",
+   "verified": true,
+   "note": "914=14687696，与存档 population_lower_strata 一致"
+  },
+  "pop_middle_strata": {
+   "offset": "0x1260",
+   "type": "i64",
+   "verified": true,
+   "note": "914=273319"
+  },
+  "pop_upper_strata": {
+   "offset": "0x1268",
+   "type": "i64",
+   "verified": true,
+   "note": "914=68000"
+  },
+  "pop_radicals": {
+   "offset": "0x1270",
+   "type": "i64",
+   "verified": true,
+   "note": "914=373673"
+  },
+  "pop_salaried": {
+   "offset": "0x1288",
+   "type": "i64",
+   "verified": true,
+   "note": "914=222890"
+  },
+  "pop_unknown_0x1290": {
+   "offset": "0x1290",
+   "type": "i64",
+   "verified": false,
+   "note": "914=3367696，存档无直接对应"
+  },
+  "pop_unemployed": {
+   "offset": "0x1298",
+   "type": "i64",
+   "verified": true,
+   "note": "914=164363"
+  },
+  "pop_laborer": {
+   "offset": "0x12A0",
+   "type": "i64",
+   "verified": true,
+   "note": "914=259323"
+  },
+  "pop_government": {
+   "offset": "0x12B0",
+   "type": "i64",
+   "verified": true,
+   "note": "914=28000"
+  },
+  "pop_military": {
+   "offset": "0x12B8",
+   "type": "i64",
+   "verified": true,
+   "note": "914=21100"
+  },
+  "pop_political_participants": {
+   "offset": "0x12C0",
+   "type": "i64",
+   "verified": true,
+   "note": "914=3757253"
+  },
+  "wage": {
+   "offset": "0x12E0",
+   "type": "i64",
+   "verified": true,
+   "note": "定点 ÷100000；914=43674359 → 436.74359"
+  },
+  "infrastructure": {
+   "offset": "0x1DB0",
+   "type": "i64",
+   "verified": true,
+   "note": "定点 ÷100000；914=93.0、915=71.48166（与存档 5 位小数完全一致）、906=12.61"
+  },
+  "infrastructure_used": {
+   "offset": "0x1DE0",
+   "type": "i64",
+   "verified": true,
+   "note": "定点 ÷100000，已用基础设施；913=60.0 与存档完全一致、915=0、914=51.8（存档时是 53.8，读档后状态略变）"
+  },
+  "unknown_0x1DF8": {
+   "offset": "0x1DF8",
+   "type": "i64",
+   "verified": false,
+   "note": "914 读到 45022533 → 450.2，含义待定"
+  },
+  "local_prices": {
+   "offset": "0xA08",
+   "type": "vector<i64>×54",
+   "verified": true,
+   "note": "本地价 ÷100000；与市场价对比可看出该州的供需失衡（北京 glass 本地 34 vs 市场 10）"
+  },
+  "timed_modifiers": {
+   "offset": "0x1808",
+   "type": "vector<实例*>",
+   "verified": true,
+   "note": "州的临时修正；实例布局同 CCountry：+0x00→CStaticModifier、+0x08 数值÷1e5、+0x10 起始、+0x18 结束。州 149 实测 2 个（spc_raided_grain_storages / ad_hoc_manufacturing multiplier=3）"
+  },
+  "market_view_supply": {
+   "offset": "0xD08",
+   "type": "vector<i64>×54",
+   "note": "该州市场的供给快照（grain=2843006328）"
+  },
+  "market_view_demand": {
+   "offset": "0xD58",
+   "type": "vector<i64>×54",
+   "note": "该州市场的需求快照（grain=1714337813）"
+  },
+  "military_political_strength": {
+   "offset": "0x12E8",
+   "type": "i64",
+   "verified": true,
+   "note": "定点 ÷100000；914=180262 → 1.80262"
+  },
+  "total_wealth": {
+   "offset": "0x12F0",
+   "type": "i64",
+   "verified": true,
+   "note": "定点 ÷100000；914=19464080 → 194.6408"
+  },
+  "primary_cultures_sol": {
+   "offset": "0x12F8",
+   "type": "i64",
+   "verified": true,
+   "note": "定点 ÷100000；914=135278388 → 1352.78388"
+  },
+  "prof_workforce": {
+   "offset": "0x1308",
+   "type": "vector<i64>×15",
+   "verified": true,
+   "note": "{ptr,n,n} 布局，下标=职业 id；914=[0,17000,13130,0,39100,17300,0,3000,259323,5000,710,3370000,12390,0,20300]"
+  },
+  "prof_population": {
+   "offset": "0x1320",
+   "type": "vector<i64>×15",
+   "verified": true,
+   "note": "914=[0,68000,52520,0,156399,69200,0,12000,1037235,20000,2840,13480061,49560,0,81200]"
+  },
+  "pop_by_strata_vec": {
+   "offset": "0x1338",
+   "type": "vector<i64>×3",
+   "verified": true,
+   "note": "914=[14687696,273319,68000]"
+  },
+  "prof_qualifications": {
+   "offset": "0x1368",
+   "type": "vector<i64>×15",
+   "verified": true,
+   "note": "各职业资质人数，下标=职业 id；914 与存档 3=432 5=19290 7=97670 8=3534363 … 完全一致"
+  },
+  "pop_by_religion": {
+   "offset": "0x1410",
+   "type": "vector<i64>×17",
+   "verified": true,
+   "note": "914=[..,4:348400,8:3001021,11:11679594]，与存档 3.484/30.01021/116.79594 ×1e5 一致"
+  },
+  "unknown_0xEC4": {
+   "offset": "0xEC4",
+   "type": "u32",
+   "verified": false,
+   "note": "state 0 读到 33565"
+  },
+  "object_stride": {
+   "value": "0x1EF8",
+   "note": "读长度必须 < 0x1EF8，否则会读到相邻对象造成同字段多偏移假象"
+  }
+ },
+ "CBuilding": {
+  "_note": "6496 个对象；对象步长 0x290；主 vtable 0x144693FA0；金额为 i64 定点 ÷100000；生产方式向量在 +0x1E0",
+  "building_id": {
+   "offset": "0x08",
+   "type": "u32",
+   "verified": true,
+   "note": "6496 个实例/6496 种取值/0~6495 全唯一（注册表下标，非存档里的 entity id）"
+  },
+  "state_id": {
+   "offset": "0xDC",
+   "type": "u32",
+   "verified": true,
+   "note": "北京 914 命中 14 次，与存档 building_manager 里该州 14 栋完全一致"
+  },
+  "levels": {
+   "offset": "0xE0",
+   "type": "i32",
+   "verified": true,
+   "note": "1(2103)/2(1010)/3(535)… 最大 599；+0xE4 是同值副本，分布完全相同"
+  },
+  "levels_mirror": {
+   "offset": "0xE4",
+   "type": "i32",
+   "note": "与 levels 恒等"
+  },
+  "type_ptr": {
+   "offset": "0xE8",
+   "type": "CBuildingType*",
+   "verified": true,
+   "note": "同类型内 100% 一致、全局恰好 92 种取值（=存档实际使用的类型数）"
+  },
+  "type_name": {
+   "offset": "type_ptr+0x18",
+   "type": "std::string",
+   "verified": true,
+   "note": "CBuildingType 上名字为 std::string：buf@+0x18 size@+0x28 cap@+0x30；例如 building_government_administration"
+  },
+  "type_index": {
+   "offset": "type_ptr+0x10",
+   "type": "u32",
+   "note": "类型索引，如 49"
+  },
+  "type_base_price": {
+   "offset": "type_ptr+0x14",
+   "type": "f32",
+   "note": "基础价格，如 104.01"
+  },
+  "staffing": {
+   "offset": "0x120",
+   "type": "i64",
+   "verified": true,
+   "note": "定点 ÷100000；arms_industry 读到 3.998 与存档完全一致；满员时 == levels"
+  },
+  "hiring_rate": {
+   "offset": "0x110",
+   "type": "i64",
+   "verified": true,
+   "note": "定点 ÷100000，100% 的建筑为 0.1，与存档 hiring_rate=0.1 一致"
+  },
+  "salary_rate": {
+   "offset": "0x130",
+   "type": "i64",
+   "verified": true,
+   "note": "14172795 ÷100000 = 141.72795"
+  },
+  "profit_after_reserves": {
+   "offset": "0x158",
+   "type": "i64",
+   "verified": true,
+   "note": "292055417 ÷100000 = 2920.55417；与存档逐栋精确相等"
+  },
+  "profit_after_investments": {
+   "offset": "0x160",
+   "type": "i64",
+   "verified": true,
+   "note": "3170: 825.40 vs profit_after_reserves 878.08，两字段确实不同"
+  },
+  "dividends": {
+   "offset": "0x190",
+   "type": "i64",
+   "verified": true,
+   "note": "3173=28916.26 与存档一致"
+  },
+  "other_building_dividends": {
+   "offset": "0x1A8",
+   "type": "i64",
+   "verified": true,
+   "note": "3172=1151.19、5490=29252.52 与存档一致"
+  },
+  "ownership_income": {
+   "offset": "0x1B0",
+   "type": "i64",
+   "verified": true,
+   "note": "3173=30403.71 与存档一致"
+  },
+  "flags_subsidized": {
+   "offset": "0x140",
+   "type": "u32",
+   "verified": false,
+   "note": "标志位字；+0x141 字节与存档 subsidized 匹配 98.6%（259 栋），疑似 bit8"
+  },
+  "object_stride": {
+   "value": "0x290"
+  },
+  "production_methods": {
+   "offset": "0x1E0",
+   "type": "ptr vector",
+   "verified": true,
+   "note": "当前启用的生产方式名列表。382/400 栋命中；元素是 PM 对象指针，名字在 +0x18（形如 pm_wooden_buildings）。用于把国家修正溯源到建筑"
+  },
+  "throughput": {
+   "offset": "0x128",
+   "type": "i64 定点 ÷100000",
+   "verified": true,
+   "note": "吞吐量。北京政府行政楼 16 级读到 1.16，与界面「吞吐量+16%」一致；全量分布（343 种取值、众数 1.0/1.01、范围 0.40~1.67）与存档 throughput 吻合，而与 cash_reserves（25000/50000/75000 等整数金额、范围 1e4~6e6）完全不同。── 原标为 cash_reserves，是早期误判：当时把 100000(=1.0 倍) 当成了金额"
+  }
+ },
+ "income_index": {
+  "2": "poll_taxes",
+  "9": "tariffs",
+  "10": "government_share_dividends",
+  "3": "consumption_tax",
+  "1": "income_taxes",
+  "7": "investment_pool_from_construction (取负)",
+  "8": "minting（铸币收入，完整值）",
+  "11": "treaty_goods_transfer（条约·商品输送，与 12 合计=界面「条约」）",
+  "12": "treaty_money_transfer（条约·资金转让，与 11 合计=界面「条约」）",
+  "15": "supply_network（补给网络）",
+  "0": "additional_income（额外收入，来自限时修正/事件）",
+  "5": "diplomatic_pacts（外交条约）",
+  "4": "dividends_tax（红利税）",
+  "16": "?（内存中有值 1772.80，存档不写；代码在求和时包含它）",
+  "17": "?（从未非零）"
+ },
+ "expense_index": {
+  "2": "government_goods（政府建筑商品消费）",
+  "3": "government_wages（政府工资）",
+  "5": "military_goods（军事维护商品）",
+  "6": "military_wages（军队工资）",
+  "7": "construction_goods（建造商品）",
+  "8": "subsidies（补贴）",
+  "9": "subventions（补助金）",
+  "14": "government_share_losses（国有建筑亏损）",
+  "16": "treaty_goods_transfer（条约商品输送支出）",
+  "17": "supply_ship_construction（补给船建造）",
+  "19": "supply_ships（补给船）",
+  "20": "military_ships（军事船舰）",
+  "21": "shipping_lanes（船运线路）",
+  "0": "additional_expense（额外支出）",
+  "10": "interest（利息，国债利息）",
+  "15": "treaty_money_transfer（条约资金转让支出）",
+  "13": "welfare（福利金）",
+  "11": "diplomatic_pacts（外交条约）",
+  "1": "government_slaves（政府奴隶，按枚举对称推断；735 国从未非零）",
+  "4": "military_slaves（军用奴隶）",
+  "18": "naval_construction（船舰建造力）"
+ },
+ "vtables": {
+  "CCountry": [
+   "0x14468FCE0",
+   "0x1446794E8",
+   "0x144690668"
+  ],
+  "CState": [
+   "0x1446BAD90",
+   "0x1446B7700"
+  ],
+  "CPop": [
+   "0x1446C1198"
+  ],
+  "CBuilding": [
+   "0x144694610",
+   "0x144693FA0"
+  ],
+  "CMarket": [
+   "0x1446D4670",
+   "0x1446D45A8"
+  ],
+  "CCountryBudget": [
+   "0x14468FB00"
+  ],
+  "CBuildingType": [
+   "0x1447616C8",
+   "0x14475FC00"
+  ]
+ },
+ "functions": {
+  "console_command_registration": "0x140015FF0",
+  "country_handle_resolver": "0x14097B8D0",
+  "debugcountrybudgets": "0x140860C50",
+  "debugmarkets": "0x140862840",
+  "debugcharacters": "0x1408620C0",
+  "debugpopconsumption": "0x140864020",
+  "money_command": "0x140869230",
+  "investment_pool_command": "0x140869650"
+ },
+ "constants": {
+  "fixed_divisor_double": {
+   "va": "0x144ADC980",
+   "value": 100000.0
+  }
+ },
+ "csv_columns": {
+  "debugcountrybudgets": [
+   "id",
+   "name",
+   "bur",
+   "aut",
+   "inf",
+   "economyhealthy",
+   "balance",
+   "income",
+   "expenses",
+   "creditratio",
+   "principal",
+   "goldreserve",
+   "creditlimit",
+   "goldreservelimit",
+   "construction"
+  ],
+  "debugmarkets": [
+   "markets",
+   "market_owner",
+   "colonizable",
+   "market_name",
+   "market_gdp",
+   "goods",
+   "category",
+   "market_price",
+   "base_price",
+   "import_export",
+   "consumption",
+   "production"
+  ]
+ },
+ "save_format": {
+  "header": "SAV0 + checksum + \\n (24 bytes)",
+  "container": "ZIP starting at offset 24",
+  "entries": {
+   "gamestate": "binary token stream (60.6MB uncompressed)",
+   "meta": "token stream"
+  },
+  "converter": "tools/melter.exe save <in.v3> <out.txt>"
+ },
+ "CCountryTechnologyStatus": {
+  "_note": "754 个，步长 0x128；其中 380 个真对象（每国一个）+ 374 个全零备用对象（+0x64==0 且 +0x58==0），按 +0x64>0 区分",
+  "country_id": {
+   "offset": "0x110",
+   "type": "u32",
+   "verified": true,
+   "note": "大清=157；754 个对象里 380 个不同 id"
+  },
+  "cap": {
+   "offset": "0x60",
+   "type": "u32",
+   "verified": true,
+   "note": "vector 容量；380 个真对象全部 cap>=size。观测到 3/7/28/42 等值，符合 MSVC 1.5 倍扩容 3->4->6->9->13->19->28->42"
+  },
+  "size": {
+   "offset": "0x64",
+   "type": "u32",
+   "verified": true,
+   "note": "已研发科技数量。add_technology cotton_gin 后 39->40；国家 236=3、398=20，与存档 acquired_technologies 条数一致"
+  },
+  "list": {
+   "offset": "0x58",
+   "type": "ptr",
+   "verified": true,
+   "note": "std::vector<CTechnology const*> 的数据区；元素是 8 字节指针。全零对象此字段为 0"
+  },
+  "next_research": {
+   "offset": "0x10 / 0x18",
+   "type": "ptr+size",
+   "verified": true,
+   "note": "「刚解锁、待通知」的短向量，加科技时 0->1；不是已研发集合"
+  },
+  "queue": {
+   "offset": "0x40 / 0x48",
+   "type": "ptr+size",
+   "verified": true,
+   "note": "另一条短向量，加科技时同样 0->1"
+  },
+  "unknown": {
+   "offset": "0x08 / 0x20 / 0x38 / 0x50 / 0x68 / 0x100 / 0x108",
+   "note": "多处重复出现模块常量 0x7FF7DFFC8DC0（空容器哨兵）；+0x104 是 float 0.9；+0x78 低 32 位疑似创新点积累"
+  },
+  "usage": "read: 找到 +0x110==国家id 的对象，按 +0x58 指针读 +0x64 个 u64，每个解引用后取 +0x18 的 MSVC std::string = 科技名"
+ },
+ "CTechnology": {
+  "_note": "科技定义对象（179 个）；由 CCountryTechnologyStatus.list 的元素指向",
+  "name": {
+   "offset": "0x18",
+   "type": "std::string",
+   "verified": true,
+   "note": "MSVC std::string；短名 SSO 内联在对象内，长名（>=16 字符）堆分配。实测 40/40 全部可读，如 enclosure / cotton_gin / international_relations"
+  },
+  "base": {
+   "offset": "0x00",
+   "note": "未细查；对象大小与其余字段待补"
+  }
+ },
+ "CCountryBudget": {
+  "_note": "内联于 CCountry 0x12D8，长 0x1360。尾部三个同构容器（每块 0x28 起）：",
+  "export_tariffs": {
+   "offset": "0x24B0（相对 CCountry）",
+   "layout": "{0, ptr@+0x08, u32 n@+0x10, u32 桶掩码@+0x14, u32 7@+0x18, f32 0.9@+0x1C, sentinel@+0x20}",
+   "verified": true,
+   "note": "出口关税率表；n 与存档 export_tariffs 条数 730/735 吻合"
+  },
+  "import_tariffs": {
+   "offset": "0x24D8（相对 CCountry）",
+   "verified": true,
+   "note": "进口关税率表；n 与存档 import_tariffs 条数 725/735 吻合"
+  },
+  "taxed_goods": {
+   "offset": "0x2500（相对 CCountry）",
+   "layout": "{ptr, u32 n, u32 cap}",
+   "verified": true,
+   "note": "消费税商品列表，元素 8 字节 CGoods*"
+  },
+  "tariff_node": {
+   "layout": "每节点 0x20 字节：{u32 哈希, u32 ?, ptr CGoods, u32 日期低, u32 日期高, u32 0xFFFFFFFF, f32 ?}",
+   "verified": false,
+   "note": "逐商品关税等级尚未定位；目前只能拿到条目数，等级走存档"
+  }
+ },
+ "income_index_note": "income[16] 是界面上收入各行的「已结算」版本（每周更新），界面显示的是「实时预测」。刚读档未走一周时，铸币（槽8）只有基础值 500，走时间后才填上完整值。收入数组已全部解出，13 个有效槽对应界面 11 行（条约占 11+12 两槽）：0=额外收入 1=所得税 2=人头税 3=消费税 4=红利税 5=外交条约 7=投资池回收(建造) 8=铸币收入 9=关税 10=政府分红 11=条约(商品) 12=条约(资金) 15=补给网络。槽 6/13/14 在 735 国里从未出现非零。验证来源：槽4 由大清(157) 界面确认（20722.84 = 红利税 £20.6K）；槽8 由走时间前后对比确认（500→94254.66）；槽0 由法国界面确认（+2000 来自有时限的修正）。注意：1836.1.4 的存档里 dividends_taxes 各国都是空块（=0），所以「存档里红利税全为 0」是开局日期造成的，不代表该槽不存数据。 【数组宽度修正】内存里这个数组至少 18 格（0x1E00~0x1E88），存档 weekly_income 只写前 16 格。IDA 证据：sub_141DAB890 从 0x1E10 起累加 16 个 qword（到 0x1E88），再减去其中 15 个，剩下 0x1E48（关税）——说明「求和」覆盖第 2~17 格，跳过第 0/1 格。2026-11 实测大清第 16 格 = 1772.80（非零），第 17 格 = 0。",
+ "CInterestGroup": {
+  "_note": "5245 个实例中约 3598 个是真的（与存档 3592 吻合），其余是 vtable 误匹配；用名字必须匹配 ^ig_ 过滤。步长 0x338。",
+  "country": {
+   "offset": "0x0AC",
+   "type": "u32",
+   "verified": true,
+   "note": "1979/1979 命中存档"
+  },
+  "leader": {
+   "offset": "0x0B0",
+   "type": "i32",
+   "verified": true,
+   "note": "角色 id；1979/1979 命中"
+  },
+  "party": {
+   "offset": "0x0B4",
+   "type": "i32",
+   "verified": true,
+   "note": "所属政党 id；84 个有政党的样本全中"
+  },
+  "in_government": {
+   "offset": "0x0A0",
+   "type": "u32",
+   "verified": true,
+   "note": "1=执政；yes 487 / no 1492 分离干净"
+  },
+  "approval": {
+   "offset": "0x0CC",
+   "type": "i32",
+   "verified": true,
+   "note": "1979/1979 命中。范围 -12~+9；阈值 <=-10 愤怒 / -9~-5 不满 / -4~4 中立 / 5~9 满意 / >=10 忠诚"
+  },
+  "political_strength": {
+   "offset": "0x0E0",
+   "type": "i64",
+   "verified": true,
+   "note": "1979/1979 命中"
+  },
+  "radicals_political_strength": {
+   "offset": "0x0E8",
+   "type": "i64",
+   "verified": true,
+   "note": "1979/1979 命中"
+  },
+  "loyalists_political_strength": {
+   "offset": "0x0F0",
+   "type": "i64",
+   "verified": true,
+   "note": "1979/1979 命中"
+  },
+  "clout": {
+   "offset": "0x0F8",
+   "type": "i32 定点 ÷100000",
+   "verified": true,
+   "note": "1979/1979 命中。与金币/价格同一套定点，不是浮点；8 个集团势力合计 = 100.00%"
+  },
+  "name": {
+   "offset": "0x270",
+   "type": "MSVC std::string",
+   "verified": true,
+   "note": "实例名如 ig_scholar_officials；长名(>=16)堆分配"
+  },
+  "known_classes": {
+   "CInterestGroup": 5245,
+   "CParty": 3492,
+   "CPoliticalMovement": 2295,
+   "CIdeology": 190,
+   "CInterestGroupType": 8,
+   "CInterestGroupTrait": 99
+  }
+ },
+ "CPoliticalMovement": {
+  "_note": "步长 0x3C8。每个运动在内存里存两代，旧副本 +0x15C 恒为 0；筛掉后 1097 个，与存档 1101 吻合 99.6%。",
+  "country": {
+   "offset": "0x130",
+   "type": "u32",
+   "verified": true,
+   "note": "291 种取值，2197/2295 落在存档的 277 国里"
+  },
+  "radicalism": {
+   "offset": "0x0D0",
+   "type": "i32 定点 ÷100000",
+   "verified": true,
+   "note": "大清三条与存档 0/0.12656/0.08152 对照，两条精确相等；宗教多数派存档 0.07656 vs 内存 0.12656（差 0.05，疑为存档后激进度增长）"
+  },
+  "pops": {
+   "offset": "0x15C",
+   "type": "i32",
+   "verified": true,
+   "note": "支持人数，与存档 pops 列表长度逐一精确相等（965/720/691）；0 = 陈旧副本"
+  },
+  "type_ptr": {
+   "offset": "0x168",
+   "type": "ptr",
+   "verified": true,
+   "note": "指向运动类型对象，名字在 +0x18；解出 27 种，与存档类型一一对应"
+  },
+  "ideology_ptr": {
+   "offset": "0x110",
+   "type": "ptr",
+   "verified": true,
+   "note": "指向意识形态对象，名字在 +0x18；29 种"
+  },
+  "support_count": {
+   "offset": "0x0F8",
+   "type": "i32",
+   "note": "未明计数（1054/792/757），与 pops 不同"
+  }
+ },
+ "CInstitution": {
+  "_note": "步长 0x1C0；217 个实例与存档 217 完全一致，无两代问题",
+  "type_ptr": {
+   "offset": "0x018",
+   "type": "ptr",
+   "verified": true,
+   "note": "指向机构类型对象，名字在 +0x18；6 种 = 6 类机构"
+  },
+  "country": {
+   "offset": "0x020",
+   "type": "u32",
+   "verified": true,
+   "note": "取值分布与存档完全一致"
+  },
+  "investment": {
+   "offset": "0x024",
+   "type": "u32",
+   "verified": true,
+   "note": "投入等级 1~4；分布 175:36:5:1 与存档完全一致"
+  }
+ },
+ "CCompany": {
+  "_note": "步长 0x238；8 家与存档 8 家完全一致",
+  "country": {
+   "offset": "0x060",
+   "type": "u32",
+   "verified": true,
+   "note": "8 家逐条相等"
+  },
+  "building": {
+   "offset": "0x064",
+   "type": "u32",
+   "verified": true,
+   "note": "母建筑 id；8 家逐条相等"
+  },
+  "ceo": {
+   "offset": "0x068",
+   "type": "u32",
+   "verified": true,
+   "note": "CEO 角色 id；8 家逐条相等"
+  },
+  "company_type_ptr": {
+   "offset": "0x0A0",
+   "type": "ptr",
+   "verified": true,
+   "note": "名字在 +0x18，如 company_hbc / company_john_cockerill；8 家全对"
+  },
+  "state_region": {
+   "offset": "0x0A8",
+   "type": "ptr",
+   "verified": true,
+   "note": "指向 CStateRegionTemplate，名字在 +0x18（如 STATE_WALLONIA）。8 家全部与存档一致。用 vtable 反查类名确认"
+  },
+  "trend_sample": {
+   "offset": "0x110 / 0x114",
+   "type": "u32 ×2",
+   "note": "趋势采样 sample_rate=120, count=1216"
+  },
+  "display_name": {
+   "offset": "0x0B0",
+   "type": "ptr",
+   "note": "CDynamicCompanyName 对象（如 dynamic_company_name_country_1），7 家为空对象"
+  },
+  "region_note": "+0x020 是 8 个指向非对象数据的指针（vtable 不在 RTTI 表里），与州区域无关"
+ },
+ "expense_index_note": "expenses[22] 位于 CCountry+0x1D50，也是「已结算」值，22 × i64 定点（÷100000）。20 个槽已定：0=额外支出 1=政府奴隶(推断) 2=政府建筑商品消费 3=政府工资 4=军用奴隶 5=军事维护商品 6=军队工资 7=建造商品 8=补贴 9=补助金 10=利息 11=外交条约 13=福利金 14=国有建筑亏损 15=条约资金转让 16=条约商品输送 17=补给船建造 18=船舰建造力 19=补给船 20=军事船舰 21=船运线路。枚举结构：1/2/3 = 政府{奴隶,商品,工资}，4/5/6 = 军队{奴隶,商品,工资}，与存档 country_building_budget.expenses 的子块顺序一致。验证来源：0/10/15/16 葡萄牙(31)、11 波罗的海联合公国 UBD(214)、13 法国(5)、4/18 美国(10)（9.66=界面「军用奴隶」、3457.80=界面「船舰建造力」）、2/3/5/6/7/8/9/17/19/20/21 大清(157)。槽 1（政府奴隶）从未在 735 国里非零，是按枚举对称推断的；槽 12 也从未出现，含义不明。注意：槽 7（建造商品）与 income[7]（投资池划转）在大清当前都是 12131.97，但这只是「没有政府出资建造」时的巧合，有政府建造时两者会不等。"
+}

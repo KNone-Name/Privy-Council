@@ -1,0 +1,101 @@
+[
+  {
+    "building": "building_tea_plantation",
+    "group": "pmg_tea_exploitation",
+    "current": [
+      "default_labour"
+    ],
+    "candidate": "worker_exploitation_tea",
+    "status": "available",
+    "gdp_before": 85524034.54137684,
+    "gdp_after": 93746344.53408924,
+    "delta": 8222309.992712393,
+    "delta_pct": 9.61403427329473,
+    "state_id": null
+  },
+  {
+    "building": "building_logging_camp",
+    "group": "pmg_hardwood",
+    "current": [
+      "pm_hardwood",
+      "pm_no_hardwood"
+    ],
+    "candidate": "pm_increased_hardwood",
+    "status": "available",
+    "gdp_before": 85524034.54137684,
+    "gdp_after": 86696610.00454764,
+    "delta": 1172575.4631707966,
+    "delta_pct": 1.3710478808193973,
+    "state_id": null
+  },
+  {
+    "building": "building_banana_plantation",
+    "group": "pmg_banana_exploitation",
+    "current": [
+      "default_labour"
+    ],
+    "candidate": "worker_exploitation_banana",
+    "status": "available",
+    "gdp_before": 85524034.54137684,
+    "gdp_after": 86023984.67517684,
+    "delta": 499950.13379999995,
+    "delta_pct": 0.5845726718588354,
+    "state_id": null
+  },
+  {
+    "building": "building_livestock_ranch",
+    "group": "pmg_base_building_livestock_ranch",
+    "current": [
+      "pm_open_air_stockyards"
+    ],
+    "candidate": "pm_butchering_tools",
+    "status": "available",
+    "gdp_before": 85524034.54137684,
+    "gdp_after": 85803499.45654744,
+    "delta": 279464.91517059505,
+    "delta_pct": 0.32676769363048336,
+    "state_id": null
+  },
+  {
+    "building": "building_dye_plantation",
+    "group": "pmg_dye_exploitation",
+    "current": [
+      "default_labour"
+    ],
+    "candidate": "worker_exploitation_dye",
+    "status": "available",
+    "gdp_before": 85524034.54137684,
+    "gdp_after": 85786265.38107988,
+    "delta": 262230.83970303833,
+    "delta_pct": 0.30661654482187706,
+    "state_id": null
+  },
+  {
+    "building": "building_urban_center",
+    "group": "pmg_street_lighting",
+    "current": [
+      "pm_no_street_lighting"
+    ],
+    "candidate": "pm_gas_streetlights",
+    "status": "available",
+    "gdp_before": 85524034.54137684,
+    "gdp_after": 85631876.23612493,
+    "delta": 107841.69474808872,
+    "delta_pct": 0.12609519104938216,
+    "state_id": null
+  },
+  {
+    "building": "building_fishing_wharf",
+    "group": "pmg_base_building_fishing_wharf",
+    "current": [
+      "pm_simple_fishing"
+    ],
+    "candidate": "pm_fishing_trawlers",
+    "status": "available",
+    "gdp_before": 85524034.54137684,
+    "gdp_after": 85582539.41507952,
+    "delta": 58504.873702675104,
+    "delta_pct": 0.06840752312073191,
+    "state_id": null
+  }
+]
